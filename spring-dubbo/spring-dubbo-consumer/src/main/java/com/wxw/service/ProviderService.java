@@ -6,11 +6,12 @@ package com.wxw.service;
  * @ Description：服务提供者接口
  * @ Version:   v_0.0.1
  */
+
 public interface ProviderService {
 
     /**
      * 发布服务信息
      * @return
      */
-    public String getSetName();
+    public String setName();
 }

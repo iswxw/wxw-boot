@@ -1,6 +1,5 @@
 package com.wxw.service;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Service;
 
@@ -13,11 +12,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class ConsumerService {
 
-    @Reference
+    @DubboReference
     ProviderService providerService;
 
     public void getName(){
-        String setName = providerService.getSetName();
+        String setName = providerService.setName();
         System.out.println("从提供者方获得名称 = " + setName);
     }
 }
