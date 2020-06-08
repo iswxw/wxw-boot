@@ -1,0 +1,12 @@
+server:
+  port: 10086
+  servlet:
+    context-path: /provider
+
+dubbo:
+  application:
+    name: spring-dubbo-provider
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  scan:
+    base-packages: com.wxw.service.ProviderService
