@@ -8,5 +8,5 @@ package com.wxw.service;
  */
 public interface ConsumerService {
 
-    public void getName();
+    public String getName();
 }

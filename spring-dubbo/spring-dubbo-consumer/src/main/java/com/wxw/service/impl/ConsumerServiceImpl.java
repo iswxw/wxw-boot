@@ -19,8 +19,9 @@ public class ConsumerServiceImpl implements ConsumerService {
     private ProviderRPC providerRPC;
 
     @Override
-    public void getName(){
+    public String getName(){
         String setName = providerRPC.setName();
         System.out.println("从提供者方获得名称 = " + setName);
+        return setName;
     }
 }
