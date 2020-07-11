@@ -1,10 +1,9 @@
 package com.wxw.service;
 
+import com.wxw.service.impl.ConsumerServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import javax.annotation.Resource;
 
 /**
  * @ Author ：wxw.
@@ -16,10 +15,10 @@ import javax.annotation.Resource;
 public class ProviderTest {
 
     @Autowired
-    private ConsumerService consumerService;
+    private ConsumerServiceImpl consumerServiceImpl;
 
     @Test
     public void testData1() {
-        consumerService.getName();
+        consumerServiceImpl.getName();
     }
 }

@@ -1,9 +1,7 @@
-package com.wxw.service.impl;
+package com.wxw.service;
 
-import com.wxw.service.ProviderService;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.stereotype.Component;
-
 
 /**
  * @ Author ：wxw.

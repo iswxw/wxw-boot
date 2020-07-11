@@ -13,6 +13,12 @@
     <artifactId>spring-dubbo-consumer</artifactId>
 
     <dependencies>
+        <!--dubbo sdk-->
+        <dependency>
+            <groupId>com.wxw.dubbo</groupId>
+            <artifactId>spring-dubbo-sdk</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!--引入dubbo依赖-->
         <dependency>
             <groupId>org.apache.dubbo</groupId>
@@ -26,6 +32,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>2.2.5.RELEASE</version>
             <scope>test</scope>
             <exclusions>
                 <exclusion>
@@ -43,6 +50,44 @@
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
             <version>1.6.2</version>
+        </dependency>
+        <!--dubbo冲突-->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>2.13.0</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>zookeeper</artifactId>
+                    <groupId>org.apache.zookeeper</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--引入zookeeper-->
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.11</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>log4j</artifactId>
+                    <groupId>log4j</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>slf4j-log4j12</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
     <!--设置最终构建-->
