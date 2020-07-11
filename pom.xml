@@ -10,7 +10,6 @@
     <modules>
         <module>spring-dubbo</module>
         <module>spring-elasticsearch</module>
-        <module>spring-distribution</module>
     </modules>
     <packaging>pom</packaging>
 
