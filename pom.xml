@@ -9,7 +9,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-dubbo</module>
-        <module>spring-distribution</module>
         <module>spring-elasticsearch</module>
         <module>spring-shiro</module>
     </modules>
