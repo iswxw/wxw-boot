@@ -5,3 +5,4 @@
 1. [spring-dubbo]()
 2. [spring-elasticsearch]()
 3. [spring-shiro]()
+4. [spring-xxl-job]()   

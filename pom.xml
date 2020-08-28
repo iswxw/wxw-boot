@@ -11,6 +11,7 @@
         <module>spring-dubbo</module>
         <module>spring-elasticsearch</module>
         <module>spring-shiro</module>
+        <module>spring-xxl-job</module>
     </modules>
     <packaging>pom</packaging>
 
