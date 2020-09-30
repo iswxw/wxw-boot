@@ -13,7 +13,7 @@
         <module>spring-shiro</module>
         <module>spring-xxl-job</module>
         <module>spring-rocketmq</module>
-        <module>rocketmq-sdk</module>
+        <module>spring-docker</module>
     </modules>
     <packaging>pom</packaging>
 

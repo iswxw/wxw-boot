@@ -1,8 +1,10 @@
 ###  Spring Boot 系列应用
 
 ---
-
-1. [spring-dubbo]()
-2. [spring-elasticsearch]()
-3. [spring-shiro]()
-4. [spring-xxl-job]()   
+### **2.x 应用整合**
+- [spring-dubbo]()
+- [spring-elasticsearch]()
+- [spring-shiro]()
+- [spring-xxl-job]() 
+- [spring-docker](http://success)  
+- [spring-rocketmq]()  
