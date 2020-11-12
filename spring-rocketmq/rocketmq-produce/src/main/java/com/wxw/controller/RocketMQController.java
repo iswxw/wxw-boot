@@ -1,6 +1,6 @@
 package com.wxw.controller;
 
-import com.wxw.common.mq.MQProducer;
+import com.wxw.common.producer.XxxProducer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,7 +17,7 @@ public class RocketMQController {
 
 
     @Resource
-    private MQProducer mqProducer;
+    private XxxProducer mqProducer;
 
     @GetMapping("/get")
     public String testGet(){
