@@ -40,10 +40,25 @@
             <artifactId>elasticsearch</artifactId>
             <version>7.4.2</version>
         </dependency>
+        <!--Spring Data Elasticsearch Object Mapping是将Java对象（域实体）映射到存储在Elasticsearch中的JSON表示形式并反向映射的过程-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>
         <!--spring boot 单元测试-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <!--引入aliyun的json-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+        <!--lombok 工具类-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 

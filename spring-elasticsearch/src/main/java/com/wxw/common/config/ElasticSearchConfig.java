@@ -18,14 +18,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ElasticSearchConfig {
 
-    @Value("${es.host1}")
+    @Value("${es.host1:10.1.1.75}")
     private String esHost1;
 
     @Bean
     public RestHighLevelClient restHighLevelClient() {
         // 优化客户端
-        RestClientBuilder builder = RestClient.builder(
-                new HttpHost(esHost1, 9200, "http"))
+        RestClientBuilder builder = RestClient.builder(new HttpHost(esHost1, 9200, "http"))
                 .setRequestConfigCallback(new RestClientBuilder.RequestConfigCallback() {
                     @Override
                     public RequestConfig.Builder customizeRequestConfig(RequestConfig.Builder requestConfigBuilder) {

@@ -1,6 +1,10 @@
 package com.wxw.controller;
 
-import org.springframework.web.bind.annotation.RestController;
+import com.wxw.domain.Person;
+import org.elasticsearch.client.RestHighLevelClient;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
 
 /**
  * @ Author ：wxw.
@@ -11,4 +15,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ElasticSearchController {
 
+    @Resource
+    private RestHighLevelClient highLevelClient;
+
+    @PostMapping("/person")
+    public String save(@RequestBody Person person) {
+
+        return null;
+    }
+
+    @GetMapping("/person/{id}")
+    public Person findById(@PathVariable("id")  Long id) {
+
+        return null;
+    }
 }
