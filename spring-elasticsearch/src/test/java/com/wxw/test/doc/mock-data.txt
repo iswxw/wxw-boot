@@ -1,0 +1,16 @@
+
+// 模拟ES数据 批量插入
+POST /haoke/house/_bulk
+
+{"index":{"_index":"haoke","_type":"house"}}
+{"id":"1001","title":"整租 · 南丹大楼 1居室 7500","price":"7500"}
+{"index":{"_index":"haoke","_type":"house"}}
+{"id":"1002","title":"陆家嘴板块，精装设计一室一厅，可拎包入住诚意租。","price":"8500"}
+{"index":{"_index":"haoke","_type":"house"}}
+{"id":"1003","title":"整租 · 健安坊 1居室 4050","price":"7500"}
+{"index":{"_index":"haoke","_type":"house"}}
+{"id":"1004","title":"整租 · 中凯城市之光+视野开阔+景色秀丽+拎包入住","price":"6500"}
+{"index":{"_index":"haoke","_type":"house"}}
+{"id":"1005","title":"整租 · 南京西路品质小区 21213三轨交汇 配套齐* 拎包入住","price":"6000"}
+{"index":{"_index":"haoke","_type":"house"}}
+{"id":"1006","title":"祥康里 简约风格 *南户型 拎包入住 看房随时","price":"7000"}
