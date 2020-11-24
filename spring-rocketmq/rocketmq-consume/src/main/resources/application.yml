@@ -1,7 +1,8 @@
 ### application.properties
 #rocketmq.name-server=127.0.0.1:9876
-
 rocketmq:
     name-server: 120.27.230.88:9876
     access-key: marketing-sales
     secret-key: 3daa3b8a-e2b9-4426-a855-281364879adf
+server:
+    port: 8090

@@ -26,7 +26,7 @@ public class XxxProducer extends BaseProducer{
     }
 
     public void send(OrderPaidEvent orderPaidEvent) {
-        send(null, null, orderPaidEvent);
+        send("test_tag", orderPaidEvent.getOrderId(), orderPaidEvent);
     }
 
     public void send(String tags, String keys, OrderPaidEvent orderPaidEvent) {
@@ -37,6 +37,6 @@ public class XxxProducer extends BaseProducer{
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.printf("%s%n", sendResult);
+        System.out.printf("响应结果： %s %n", sendResult);
     }
 }
