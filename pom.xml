@@ -15,6 +15,7 @@
         <module>spring-rocketmq</module>
         <module>spring-docker</module>
         <module>spring-netty</module>
+        <module>spring-zookeeper</module>
     </modules>
     <packaging>pom</packaging>
 
