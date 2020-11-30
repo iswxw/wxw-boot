@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-elasticsearch" />
+        <module name="spring-docker" />
+        <module name="spring-shiro" />
+        <module name="spring-dubbo-consumer" />
+        <module name="spring-dubbo-sdk" />
+        <module name="rocketmq-consume" />
+        <module name="rocketmq-sdk" />
+        <module name="spring-zookeeper" />
+        <module name="spring-xxl-job" />
+        <module name="spring-dubbo-provider" />
+        <module name="spring-netty" />
+        <module name="rocketmq-produce" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rocketmq-consume" target="1.8" />
+      <module name="rocketmq-produce" target="1.8" />
+      <module name="rocketmq-sdk" target="1.8" />
+      <module name="spring-docker" target="1.8" />
+      <module name="spring-dubbo" target="1.8" />
+      <module name="spring-dubbo-consumer" target="1.8" />
+      <module name="spring-dubbo-provider" target="1.8" />
+      <module name="spring-dubbo-sdk" target="1.8" />
+      <module name="spring-elasticsearch" target="1.8" />
+      <module name="spring-netty" target="1.8" />
+      <module name="spring-rocketmq" target="1.8" />
+      <module name="spring-shiro" target="1.8" />
+      <module name="spring-xxl-job" target="1.8" />
+      <module name="spring-zookeeper" target="1.8" />
+      <module name="SpringBoot" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

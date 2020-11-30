@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot.iml" filepath="$PROJECT_DIR$/SpringBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/rocketmq-consume.iml" filepath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/rocketmq-consume.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/rocketmq-produce.iml" filepath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/rocketmq-produce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-sdk/rocketmq-sdk.iml" filepath="$PROJECT_DIR$/spring-rocketmq/rocketmq-sdk/rocketmq-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-docker/spring-docker.iml" filepath="$PROJECT_DIR$/spring-docker/spring-docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo.iml" filepath="$PROJECT_DIR$/spring-dubbo/spring-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-consumer/spring-dubbo-consumer.iml" filepath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-consumer/spring-dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-provider/spring-dubbo-provider.iml" filepath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-provider/spring-dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-sdk/spring-dubbo-sdk.iml" filepath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-sdk/spring-dubbo-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-elasticsearch/spring-elasticsearch.iml" filepath="$PROJECT_DIR$/spring-elasticsearch/spring-elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-netty/spring-netty.iml" filepath="$PROJECT_DIR$/spring-netty/spring-netty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/spring-rocketmq.iml" filepath="$PROJECT_DIR$/spring-rocketmq/spring-rocketmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-shiro/spring-shiro.iml" filepath="$PROJECT_DIR$/spring-shiro/spring-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-xxl-job/spring-xxl-job.iml" filepath="$PROJECT_DIR$/spring-xxl-job/spring-xxl-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-zookeeper/spring-zookeeper.iml" filepath="$PROJECT_DIR$/spring-zookeeper/spring-zookeeper.iml" />
+    </modules>
+  </component>
+</project>

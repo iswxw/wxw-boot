@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-docker" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-docker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-docker/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-sdk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-elasticsearch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-elasticsearch/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-elasticsearch/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-netty/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rocketmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-consume" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-produce" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-sdk" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-shiro" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-shiro/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-shiro/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-xxl-job" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-zookeeper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-zookeeper/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
