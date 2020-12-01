@@ -2,12 +2,14 @@ package com.wxw.service.impl;
 
 import com.wxw.common.tools.OrderNumGenerator;
 import com.wxw.service.OrderService;
+import org.springframework.stereotype.Service;
 
 /**
  * 订单模块
  * @author: wxw
  * @date: 2020-11-28-16:09
  */
+@Service
 public class OrderServiceImpl implements OrderService {
 
     private OrderNumGenerator ong = new OrderNumGenerator();

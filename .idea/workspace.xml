@@ -22,42 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="fix-zk v2">
-      <change afterPath="$PROJECT_DIR$/spring-redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/RedisMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/common/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/common/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/common/config/RedissionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/common/tools/OrderNumGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/controller/AopLockController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/distribute_lock/aop_lock/ApiLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/distribute_lock/aop_lock/ApiLockAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/distribute_lock/aop_lock/ApiLockType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/distribute_lock/aop_lock/RateLimiterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/distribute_lock/cluster_test/ConcurrentTestByRedission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/distribute_lock/redission_lock/RedissionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/distribute_lock/redission_lock/RedissonLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/service/impl/OrderServiceImplByRedission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="redis 分布式锁">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-docker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-docker/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-dubbo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-dubbo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-elasticsearch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-elasticsearch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-netty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-netty/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rocketmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-shiro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shiro/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-zookeeper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-zookeeper/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/distribute_lock/cluster/ConcurrentTestDemo_JvmLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/distribute_lock/cluster_test/ConcurrentTestDemo_JvmLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/distribute_lock/cluster/ConcurrentTest_DistributeLock_BadZK.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/distribute_lock/cluster_test/ConcurrentTest_DistributeLock_BadZK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/distribute_lock/cluster/ConcurrentTest_DistributeLock_GoodZK.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/distribute_lock/cluster_test/ConcurrentTest_DistributeLock_GoodZK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/controller/AopLockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/controller/AopLockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-redis/src/main/java/com/wxw/service/impl/OrderServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +126,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RedissionTest">
+  <component name="RunManager" selected="Spring Boot.RedisMain">
     <configuration name="ConcurrentTestByRedission" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wxw.distribute_lock.cluster_test.ConcurrentTestByRedission" />
       <module name="spring-redis" />
@@ -211,22 +179,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WatcherDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wxw.watcher.WatcherDemo" />
-      <module name="spring-zookeeper" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wxw.watcher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="DockerMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-docker" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxw.DockerMain" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DockerMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="spring-docker" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxw.DockerMain" />
+    <configuration name="RedisMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wxw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxw.RedisMain" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -296,11 +264,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.RedisMain" />
         <item itemvalue="Application.RedissionTest" />
         <item itemvalue="Application.ConcurrentTestByRedission" />
         <item itemvalue="Application.ConcurrentTest_DistributeLock_GoodZK" />
         <item itemvalue="Application.ConcurrentTest_DistributeLock_BadZK" />
-        <item itemvalue="Application.WatcherDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -326,7 +294,7 @@
       <workItem from="1606549617221" duration="750000" />
       <workItem from="1606566053894" duration="45000" />
       <workItem from="1606745337015" duration="7996000" />
-      <workItem from="1606784478464" duration="11163000" />
+      <workItem from="1606784478464" duration="16924000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -412,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606789082910</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="redis 分布式锁">
+      <created>1606796645634</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606796645634</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -475,7 +450,8 @@
     <MESSAGE value="maven" />
     <MESSAGE value="fix-zk" />
     <MESSAGE value="fix-zk v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix-zk v2" />
+    <MESSAGE value="redis 分布式锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis 分布式锁" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1606748508224">
@@ -500,42 +476,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="378" height="577" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606789095830" />
-    <state width="1877" height="530" key="GridCell.Tab.0.bottom" timestamp="1606796341712">
+    <state width="1435" height="483" key="GridCell.Tab.0.bottom" timestamp="1606806453193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="530" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606796341712" />
-    <state width="1877" height="530" key="GridCell.Tab.0.center" timestamp="1606796341712">
+    <state width="1435" height="483" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606806453193" />
+    <state width="1435" height="483" key="GridCell.Tab.0.center" timestamp="1606806453193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="530" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606796341712" />
-    <state width="1877" height="530" key="GridCell.Tab.0.left" timestamp="1606796341712">
+    <state width="1435" height="483" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606806453193" />
+    <state width="1435" height="483" key="GridCell.Tab.0.left" timestamp="1606806453193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="530" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606796341712" />
-    <state width="1877" height="530" key="GridCell.Tab.0.right" timestamp="1606796341712">
+    <state width="1435" height="483" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606806453193" />
+    <state width="1435" height="483" key="GridCell.Tab.0.right" timestamp="1606806453193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="530" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606796341712" />
-    <state width="1877" height="333" key="GridCell.Tab.1.bottom" timestamp="1606796019971">
+    <state width="1435" height="483" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606806453193" />
+    <state width="1435" height="483" key="GridCell.Tab.1.bottom" timestamp="1606806453193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="333" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606796019971" />
-    <state width="1877" height="333" key="GridCell.Tab.1.center" timestamp="1606796019970">
+    <state width="1435" height="483" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606806453193" />
+    <state width="1435" height="483" key="GridCell.Tab.1.center" timestamp="1606806453193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="333" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606796019970" />
-    <state width="1877" height="333" key="GridCell.Tab.1.left" timestamp="1606796019970">
+    <state width="1435" height="483" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606806453193" />
+    <state width="1435" height="483" key="GridCell.Tab.1.left" timestamp="1606806453193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="333" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606796019970" />
-    <state width="1877" height="333" key="GridCell.Tab.1.right" timestamp="1606796019971">
+    <state width="1435" height="483" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606806453193" />
+    <state width="1435" height="483" key="GridCell.Tab.1.right" timestamp="1606806453193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="333" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606796019971" />
+    <state width="1435" height="483" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606806453193" />
     <state x="147" y="65" key="MergeDialog" timestamp="1606745505114">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -544,10 +520,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606789086249">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606796648828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606789086249" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606796648828" />
     <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606745476666">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
