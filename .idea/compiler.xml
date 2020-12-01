@@ -7,25 +7,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-redis" />
-        <module name="spring-zookeeper" />
-        <module name="spring-shiro" />
-        <module name="rocketmq-sdk" />
         <module name="spring-xxl-job" />
-        <module name="spring-elasticsearch" />
-        <module name="spring-dubbo-consumer" />
-        <module name="spring-docker" />
-        <module name="rocketmq-produce" />
-        <module name="spring-dubbo-sdk" />
         <module name="spring-dubbo-provider" />
+        <module name="spring-read-write" />
+        <module name="spring-redis" />
         <module name="spring-netty" />
+        <module name="spring-dubbo-consumer" />
+        <module name="rocketmq-sdk" />
+        <module name="spring-shiro" />
+        <module name="spring-db-table" />
+        <module name="spring-db-table-read-write" />
+        <module name="spring-dubbo-sdk" />
+        <module name="spring-zookeeper" />
+        <module name="spring-table-read-write" />
+        <module name="spring-docker" />
+        <module name="spring-elasticsearch" />
+        <module name="spring-table" />
         <module name="rocketmq-consume" />
+        <module name="rocketmq-produce" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="rocketmq-consume" target="1.8" />
       <module name="rocketmq-produce" target="1.8" />
       <module name="rocketmq-sdk" target="1.8" />
+      <module name="spring-db-table" target="1.8" />
+      <module name="spring-db-table-read-write" target="1.8" />
       <module name="spring-docker" target="1.8" />
       <module name="spring-dubbo" target="1.8" />
       <module name="spring-dubbo-consumer" target="1.8" />
@@ -33,9 +40,13 @@
       <module name="spring-dubbo-sdk" target="1.8" />
       <module name="spring-elasticsearch" target="1.8" />
       <module name="spring-netty" target="1.8" />
+      <module name="spring-read-write" target="1.8" />
       <module name="spring-redis" target="1.8" />
       <module name="spring-rocketmq" target="1.8" />
+      <module name="spring-shardingsphere" target="1.8" />
       <module name="spring-shiro" target="1.8" />
+      <module name="spring-table" target="1.8" />
+      <module name="spring-table-read-write" target="1.8" />
       <module name="spring-xxl-job" target="1.8" />
       <module name="spring-zookeeper" target="1.8" />
       <module name="wxw-springboot" target="1.8" />

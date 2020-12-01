@@ -17,6 +17,7 @@
         <module>spring-netty</module>
         <module>spring-zookeeper</module>
         <module>spring-redis</module>
+        <module>spring-shardingsphere</module>
     </modules>
     <packaging>pom</packaging>
 

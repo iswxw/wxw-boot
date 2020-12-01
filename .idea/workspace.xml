@@ -22,17 +22,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="AOP 注解分布式测试">
-      <change afterPath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/tcp/UpPackNettyServer.java" afterDir="false" />
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="Netty 拆包">
+      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/spring-db-table-read-write/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/spring-db-table/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/spring-read-write/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/spring-table-read-write/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/spring-table/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/src/main/java/com/wxw/ShardingSphereMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/bio/BIO_Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/cs/bio/BIO_Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/bio/BIO_Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/cs/bio/BIO_Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/bio/SocketTransportByThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/cs/bio/SocketTransportByThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/netty/Netty_Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/cs/netty/Netty_Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/netty/Netty_Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/cs/netty/Netty_Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/nio/NIO_Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/cs/nio/NIO_Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/nio/NIO_Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-netty/src/main/java/com/wxw/common/cs/nio/NIO_Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +304,7 @@
       <workItem from="1606549617221" duration="750000" />
       <workItem from="1606566053894" duration="45000" />
       <workItem from="1606745337015" duration="7996000" />
-      <workItem from="1606784478464" duration="19191000" />
+      <workItem from="1606784478464" duration="21991000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -401,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606806564129</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Netty 拆包">
+      <created>1606809051939</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606809051939</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -466,7 +476,8 @@
     <MESSAGE value="fix-zk v2" />
     <MESSAGE value="redis 分布式锁" />
     <MESSAGE value="AOP 注解分布式测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOP 注解分布式测试" />
+    <MESSAGE value="Netty 拆包" />
+    <option name="LAST_COMMIT_MESSAGE" value="Netty 拆包" />
   </component>
   <component name="WindowStateProjectService">
     <state x="718" y="152" key="#com.intellij.ide.util.MemberChooser" timestamp="1606808429003">
@@ -536,19 +547,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606806570614">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606809058848">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606806570614" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606809058848" />
     <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606745476666">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1606745476666" />
-    <state x="223" y="96" key="new project wizard" timestamp="1606789927542">
+    <state x="223" y="96" key="new project wizard" timestamp="1606812310482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="178" y="77" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1606745412176" />
-    <state x="223" y="96" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1606789927542" />
+    <state x="223" y="96" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1606812310482" />
   </component>
   <component name="masterDetails">
     <states>
