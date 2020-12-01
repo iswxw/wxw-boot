@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SpringBoot.iml" filepath="$PROJECT_DIR$/SpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/rocketmq-consume.iml" filepath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/rocketmq-consume.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/rocketmq-produce.iml" filepath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/rocketmq-produce.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-sdk/rocketmq-sdk.iml" filepath="$PROJECT_DIR$/spring-rocketmq/rocketmq-sdk/rocketmq-sdk.iml" />
@@ -17,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-shiro/spring-shiro.iml" filepath="$PROJECT_DIR$/spring-shiro/spring-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-xxl-job/spring-xxl-job.iml" filepath="$PROJECT_DIR$/spring-xxl-job/spring-xxl-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-zookeeper/spring-zookeeper.iml" filepath="$PROJECT_DIR$/spring-zookeeper/spring-zookeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wxw-springboot.iml" filepath="$PROJECT_DIR$/wxw-springboot.iml" />
     </modules>
   </component>
 </project>
