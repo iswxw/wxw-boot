@@ -61,7 +61,7 @@ public class ZKDistributeImproveLock implements Lock {
     @Override
     public boolean tryLock() { // 不会阻塞
         if (this.currentPath == null){
-            currentPath = this.client.createEphemeralSequential(lockPath+"/","zk-lock");
+            currentPath = this.client.createEphemeralSequential(lockPath +"/","zk-lock");
         }
         // 获取所有的子节点
         List<String> children = client.getChildren(lockPath);
@@ -72,8 +72,11 @@ public class ZKDistributeImproveLock implements Lock {
             return true;
         }else {
             // 取到前一个
-            // 得到节点的索引号  children = [currentPath,beforePath]
+            // 得到节点的索引号  children = [currentPath[/zNode/btree002],beforePath[/zNode/btree001]]
+            // currentPath = /zNode/btree001
+            // lockPath = /zNode
             int curIndex = children.indexOf(currentPath.substring(lockPath.length() + 1));
+            // 前一个节点
             beforePath = lockPath + "/" + children.get(curIndex-1);
         }
         return false;
@@ -94,8 +97,9 @@ public class ZKDistributeImproveLock implements Lock {
                 cdl.countDown();
             }
         };
+        // 监听前一个节点
         client.subscribeDataChanges(this.beforePath,listener);
-        // 怎么让自己阻塞
+        // 怎么让自己阻塞 （等着 前一个节点被删除再唤醒）
         if (this.client.exists(this.beforePath)){
             try {
                 cdl.await();
