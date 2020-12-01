@@ -65,14 +65,14 @@ public class ZKDistributeImproveLock implements Lock {
         }
         // 获取所有的子节点
         List<String> children = client.getChildren(lockPath);
-        //排序List
+        // 排序List 从小到大
         Collections.sort(children);
         // 判断当前节点是否是最小的
         if (currentPath.equals(lockPath+"/"+children.get(0))){
             return true;
         }else {
             // 取到前一个
-            // 得到字节的索引号
+            // 得到节点的索引号  children = [currentPath,beforePath]
             int curIndex = children.indexOf(currentPath.substring(lockPath.length() + 1));
             beforePath = lockPath + "/" + children.get(curIndex-1);
         }
