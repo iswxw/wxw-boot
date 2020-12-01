@@ -1,38 +1,37 @@
-package com.wxw.distribute_lock.cluster;
+package com.wxw.distribute_lock.cluster_test;
 
 import com.wxw.service.OrderService;
-import com.wxw.service.impl.OrderServiceImplWithLock;
-import com.wxw.service.impl.OrderServiceImplWithZkDisLock;
+import com.wxw.service.impl.OrderServiceImplByRedission;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 
 /**
- * 20*20  集群 ZK 简单实现分布式锁 会有惊群效应
- *
+ * 模拟分布式集群 并发测试
  * @author: wxw
- * @date: 2020-11-30-22:39
+ * @date: 2020-11-28-16:41
  */
-public class ConcurrentTest_DistributeLock_BadZK {
+public class ConcurrentTestByRedission {
 
-    // 模拟并发无法保证 订单号的唯一性
     public static void main(String[] args) {
+        // 并发数
         int currency = 20;
-        CyclicBarrier cb = new CyclicBarrier(currency);  // 循环屏障
+        CyclicBarrier cb = new CyclicBarrier(currency);   // 循环屏障
         CountDownLatch cdl = new CountDownLatch(currency); // 倒计数锁存器
-//        OrderService orderService = new OrderServiceImpl(); //单机无锁
-//        OrderService orderServiceLock = new OrderServiceImplWithLock(); // 单机 jvm锁想
+
+//        OrderService orderService = new OrderServiceImpl();  // 单机
+//        OrderService orderServiceLock = new OrderServiceImplWithLock(); // JVM 锁  ReentrantLock
 
         // 多线程模拟高并发
         for (int i = 0; i < currency; i++) {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    // 模拟分布式集群场景
-//                  OrderService orderServiceLock = new OrderServiceImplWithLock(); //模拟集群 jvm锁 也导致并发问题
-                    OrderService orderServiceLock = new OrderServiceImplWithZkDisLock(); //模拟集群 分布式锁 惊群效应
-                    System.out.println(Thread.currentThread().getName() + "：我准备好");
+                    //模拟分布式集群场景
+//                    OrderService orderServiceLock = new OrderServiceImplWithLock(); // 模拟集群 jvm锁 并发导致的问题
+                    OrderService orderServiceLock = new OrderServiceImplByRedission(); // 模拟集群 redission 分布式锁
+                    System.out.println(Thread.currentThread().getName() + "：我准备好了");
                     // 等待一起出发
                     try {
                         // 方式一
@@ -46,6 +45,7 @@ public class ConcurrentTest_DistributeLock_BadZK {
                     // 调用创建订单服务
 //                    orderService.createOrder();
                     orderServiceLock.createOrder();
+
                 }
             }).start();
         }

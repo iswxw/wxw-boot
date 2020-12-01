@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-sdk/spring-dubbo-sdk.iml" filepath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-sdk/spring-dubbo-sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-elasticsearch/spring-elasticsearch.iml" filepath="$PROJECT_DIR$/spring-elasticsearch/spring-elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-netty/spring-netty.iml" filepath="$PROJECT_DIR$/spring-netty/spring-netty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-redis/spring-redis.iml" filepath="$PROJECT_DIR$/spring-redis/spring-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/spring-rocketmq.iml" filepath="$PROJECT_DIR$/spring-rocketmq/spring-rocketmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-shiro/spring-shiro.iml" filepath="$PROJECT_DIR$/spring-shiro/spring-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-xxl-job/spring-xxl-job.iml" filepath="$PROJECT_DIR$/spring-xxl-job/spring-xxl-job.iml" />

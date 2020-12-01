@@ -18,6 +18,8 @@
     <file url="file://$PROJECT_DIR$/spring-elasticsearch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-elasticsearch/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-netty/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-redis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rocketmq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-consume" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java" charset="UTF-8" />

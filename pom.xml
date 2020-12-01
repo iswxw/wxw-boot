@@ -16,6 +16,7 @@
         <module>spring-docker</module>
         <module>spring-netty</module>
         <module>spring-zookeeper</module>
+        <module>spring-redis</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,20 +1,19 @@
-package com.wxw.distribute_lock.cluster;
+package com.wxw.distribute_lock.cluster_test;
 
 import com.wxw.service.OrderService;
 import com.wxw.service.impl.OrderServiceImplWithZkDisLock;
-import com.wxw.service.impl.OrderServiceImplWithZkGoodLock;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 
 /**
- * 20*20  集群 ZK 简单实现分布式锁 使用临时顺序节点 完美
+ * 20*20  集群 ZK 简单实现分布式锁 会有惊群效应
  *
  * @author: wxw
  * @date: 2020-11-30-22:39
  */
-public class ConcurrentTest_DistributeLock_GoodZK {
+public class ConcurrentTest_DistributeLock_BadZK {
 
     // 模拟并发无法保证 订单号的唯一性
     public static void main(String[] args) {
@@ -31,8 +30,7 @@ public class ConcurrentTest_DistributeLock_GoodZK {
                 public void run() {
                     // 模拟分布式集群场景
 //                  OrderService orderServiceLock = new OrderServiceImplWithLock(); //模拟集群 jvm锁 也导致并发问题
-//                    OrderService orderServiceLock = new OrderServiceImplWithZkDisLock(); //模拟集群 分布式锁 惊群效应
-                    OrderService orderServiceLock = new OrderServiceImplWithZkGoodLock(); //模拟集群 分布式锁 完美了
+                    OrderService orderServiceLock = new OrderServiceImplWithZkDisLock(); //模拟集群 分布式锁 惊群效应
                     System.out.println(Thread.currentThread().getName() + "：我准备好");
                     // 等待一起出发
                     try {

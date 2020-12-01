@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-redis" />
         <module name="spring-zookeeper" />
         <module name="spring-shiro" />
         <module name="rocketmq-sdk" />
@@ -32,6 +33,7 @@
       <module name="spring-dubbo-sdk" target="1.8" />
       <module name="spring-elasticsearch" target="1.8" />
       <module name="spring-netty" target="1.8" />
+      <module name="spring-redis" target="1.8" />
       <module name="spring-rocketmq" target="1.8" />
       <module name="spring-shiro" target="1.8" />
       <module name="spring-xxl-job" target="1.8" />

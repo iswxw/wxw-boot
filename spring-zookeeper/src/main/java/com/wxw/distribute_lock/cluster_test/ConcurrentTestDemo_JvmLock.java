@@ -1,7 +1,6 @@
-package com.wxw.distribute_lock.cluster;
+package com.wxw.distribute_lock.cluster_test;
 
 import com.wxw.service.OrderService;
-import com.wxw.service.impl.OrderServiceImpl;
 import com.wxw.service.impl.OrderServiceImplWithLock;
 
 import java.util.concurrent.BrokenBarrierException;
