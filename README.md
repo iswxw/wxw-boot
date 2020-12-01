@@ -1,10 +1,11 @@
-###  Spring Boot 系列应用
+###  Spring Boot 实战
 
 ---
 
 - [spring-dubbo]()
 - [spring-elasticsearch]()
-- [spring-netty]()    
+- [spring-netty]() 
+- [spring-redis]()      
 - [spring-shiro]()
 - [spring-xxl-job]() 
 - [spring-docker](http://success)  

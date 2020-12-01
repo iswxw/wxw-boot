@@ -1,4 +1,4 @@
-package com.wxw.common.netty;
+package com.wxw.common.cs.netty;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;

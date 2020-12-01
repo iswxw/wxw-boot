@@ -1,4 +1,4 @@
-package com.wxw.common.bio;
+package com.wxw.common.cs.bio;
 
 import domain.Message;
 
