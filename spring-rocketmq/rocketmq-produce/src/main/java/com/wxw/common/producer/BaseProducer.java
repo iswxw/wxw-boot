@@ -6,6 +6,7 @@ import org.apache.rocketmq.acl.common.AclClientRPCHook;
 import org.apache.rocketmq.acl.common.SessionCredentials;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
+import org.apache.rocketmq.client.producer.TransactionMQProducer;
 import org.apache.rocketmq.remoting.RPCHook;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -48,8 +49,8 @@ public abstract class BaseProducer {
         return new AclClientRPCHook(new SessionCredentials(rocketMQProperties.getAccessKey(), rocketMQProperties.getSecretKey()));
     }
 
+    // 额外配置
     public void configProducer(){
-
     }
 
     abstract String getGroup();

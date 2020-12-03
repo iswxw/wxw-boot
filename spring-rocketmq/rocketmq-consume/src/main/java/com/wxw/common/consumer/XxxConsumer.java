@@ -50,9 +50,20 @@ public class XxxConsumer extends BaseConsumer {
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
                 System.out.printf("%s Receive New Messages: %s %n", Thread.currentThread().getName(), msgs);
                 byte[] body = msgs.get(0).getBody();
+//                                msgs.forEach(msg->{
+//                    int reconsumeTimes = msg.getReconsumeTimes(); // 重试次数
+//                });
+//                context.setAckIndex(0); // 手动确认
+//                context.setDelayLevelWhenNextConsume(2000); // 延迟消费
                 OrderPaidEvent seller = JSON.parseObject(body, OrderPaidEvent.class);
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
             }
         };
+    }
+
+    @Override
+    public void configConsumer() {
+        super.configConsumer();
+//        consumer.setMaxReconsumeTimes(2000);
     }
 }

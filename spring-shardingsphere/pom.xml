@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-read-write</module>
-        <module>spring-separate-table</module>
+        <module>spring-db-table-read-write</module>
         <module>spring-db-table</module>
         <module>spring-table-read-write</module>
         <module>spring-table</module>
