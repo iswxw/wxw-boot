@@ -22,19 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="基于RocketMQ简单实现分布式事务">
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/retry/RetryConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/simple/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/client/ProduceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/producer/retry/RetryProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/producer/simple/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/controller/SimpleProduceRocketMQController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-sdk/src/main/java/common/config/JmsConfig.java" afterDir="false" />
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="基于RocketMQ 超时重试">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/client/ProduceClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/config/Jms.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/config/Jms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/XxxConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/XxxConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/config/Jms.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/config/Jms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/controller/ProduceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/controller/TxProduceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/controller/SimpleProduceRocketMQController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/controller/SimpleProduceRocketMQController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,7 +306,7 @@
       <workItem from="1606745337015" duration="7996000" />
       <workItem from="1606784478464" duration="22959000" />
       <workItem from="1606977304384" duration="8364000" />
-      <workItem from="1607043879602" duration="12883000" />
+      <workItem from="1607043879602" duration="16118000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -450,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606986779154</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="基于RocketMQ 超时重试">
+      <created>1607068764447</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607068764447</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -519,7 +517,8 @@
     <MESSAGE value="Netty 拆包" />
     <MESSAGE value="读写分离" />
     <MESSAGE value="基于RocketMQ简单实现分布式事务" />
-    <option name="LAST_COMMIT_MESSAGE" value="基于RocketMQ简单实现分布式事务" />
+    <MESSAGE value="基于RocketMQ 超时重试" />
+    <option name="LAST_COMMIT_MESSAGE" value="基于RocketMQ 超时重试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607067551954">
@@ -545,10 +544,10 @@
     </state>
     <state x="147" y="66" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1606745471700" />
     <state x="184" y="82" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785072072" />
-    <state width="378" height="577" key="Git.Branch.Popup" timestamp="1606789095830">
+    <state width="380" height="579" key="Git.Branch.Popup" timestamp="1607069675554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="378" height="577" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606789095830" />
+    <state width="380" height="579" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607069675554" />
     <state width="1877" height="307" key="GridCell.Tab.0.bottom" timestamp="1607068623913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -597,10 +596,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606986784685">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607068771007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606986784685" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607068771007" />
     <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606745476666">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

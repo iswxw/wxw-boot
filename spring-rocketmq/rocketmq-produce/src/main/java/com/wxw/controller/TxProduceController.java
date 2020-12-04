@@ -27,7 +27,7 @@ import java.util.UUID;
 @Slf4j
 @RestController
 @RequestMapping("api/v1/order")
-public class ProduceController {
+public class TxProduceController {
 
     @Autowired
     private Jms jms;
