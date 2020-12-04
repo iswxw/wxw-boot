@@ -22,10 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="基于RocketMQ 超时重试">
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="mq 包 分类">
+      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/order/OrderConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/producer/order/OrderProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-sdk/src/main/java/com/wxw/domain/ProductOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/controller/ProduceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/controller/TxProduceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/controller/SimpleProduceRocketMQController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/controller/SimpleProduceRocketMQController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,7 +307,7 @@
       <workItem from="1606745337015" duration="7996000" />
       <workItem from="1606784478464" duration="22959000" />
       <workItem from="1606977304384" duration="8364000" />
-      <workItem from="1607043879602" duration="16118000" />
+      <workItem from="1607043879602" duration="18492000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -448,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607068764447</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="mq 包 分类">
+      <created>1607071997986</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1607071997986</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -518,7 +526,8 @@
     <MESSAGE value="读写分离" />
     <MESSAGE value="基于RocketMQ简单实现分布式事务" />
     <MESSAGE value="基于RocketMQ 超时重试" />
-    <option name="LAST_COMMIT_MESSAGE" value="基于RocketMQ 超时重试" />
+    <MESSAGE value="mq 包 分类" />
+    <option name="LAST_COMMIT_MESSAGE" value="mq 包 分类" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607067551954">
@@ -544,10 +553,10 @@
     </state>
     <state x="147" y="66" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1606745471700" />
     <state x="184" y="82" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785072072" />
-    <state width="380" height="579" key="Git.Branch.Popup" timestamp="1607069675554">
+    <state width="382" height="581" key="Git.Branch.Popup" timestamp="1607071999896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="380" height="579" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607069675554" />
+    <state width="382" height="581" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607071999896" />
     <state width="1877" height="307" key="GridCell.Tab.0.bottom" timestamp="1607068623913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -596,10 +605,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607068771007">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607072005402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607068771007" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607072005402" />
     <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606745476666">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
