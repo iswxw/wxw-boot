@@ -22,26 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="读写分离">
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/client/ProduceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/config/Jms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/transaction/TransactionConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/domain/Produce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/service/ProduceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/service/impl/ProduceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/config/Jms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/producer/transaction/TransactionProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/controller/ProduceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/service/ProduceOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/service/impl/ProduceOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="基于RocketMQ简单实现分布式事务">
+      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/retry/RetryConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/simple/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/client/ProduceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/producer/retry/RetryProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/producer/simple/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/controller/SimpleProduceRocketMQController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-sdk/src/main/java/common/config/JmsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/BaseConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/BaseConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/client/ProduceClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/config/Jms.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/config/Jms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/XxxConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/src/main/java/com/wxw/common/consumer/XxxConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/producer/BaseProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/producer/BaseProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-shardingsphere/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingsphere/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/config/Jms.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/config/Jms.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +103,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -143,13 +136,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UpPackNettyServer">
-    <configuration name="ConcurrentTestByRedission" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wxw.distribute_lock.cluster_test.ConcurrentTestByRedission" />
-      <module name="spring-redis" />
+  <component name="RunManager" selected="Application.RetryProducer">
+    <configuration name="RetryConsumer" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wxw.common.consumer.retry.RetryConsumer" />
+      <module name="rocketmq-consume" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wxw.distribute_lock.cluster_test.*" />
+          <option name="PATTERN" value="com.wxw.common.consumer.retry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,25 +150,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConcurrentTest_DistributeLock_GoodZK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wxw.distribute_lock.cluster_test.ConcurrentTest_DistributeLock_GoodZK" />
-      <module name="spring-zookeeper" />
+    <configuration name="RetryProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wxw.common.producer.retry.RetryProducer" />
+      <module name="rocketmq-produce" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wxw.distribute_lock.cluster_test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedissionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wxw.distribute_lock.redission_lock.RedissionTest" />
-      <module name="spring-redis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wxw.distribute_lock.redission_lock.*" />
+          <option name="PATTERN" value="com.wxw.common.producer.retry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -199,6 +179,20 @@
     <configuration name="DockerMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-docker" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxw.DockerMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MQConsumerMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="rocketmq-consume" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wxw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxw.MQConsumerMain" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -279,13 +273,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.RetryConsumer" />
+      <item itemvalue="Application.RetryProducer" />
+      <item itemvalue="Application.UpPackNettyServer" />
+      <item itemvalue="Spring Boot.DockerMain" />
+      <item itemvalue="Spring Boot.MQConsumerMain" />
+      <item itemvalue="Spring Boot.RedisMain" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RetryConsumer" />
+        <item itemvalue="Application.RetryProducer" />
+        <item itemvalue="Spring Boot.MQConsumerMain" />
         <item itemvalue="Application.UpPackNettyServer" />
         <item itemvalue="Spring Boot.RedisMain" />
-        <item itemvalue="Application.RedissionTest" />
-        <item itemvalue="Application.ConcurrentTestByRedission" />
-        <item itemvalue="Application.ConcurrentTest_DistributeLock_GoodZK" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +314,8 @@
       <workItem from="1606566053894" duration="45000" />
       <workItem from="1606745337015" duration="7996000" />
       <workItem from="1606784478464" duration="22959000" />
-      <workItem from="1606977304384" duration="7684000" />
+      <workItem from="1606977304384" duration="8364000" />
+      <workItem from="1607043879602" duration="12883000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -433,7 +436,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606812874992</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="基于RocketMQ简单实现分布式事务">
+      <created>1606986762323</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1606986762323</updated>
+    </task>
+    <task id="LOCAL-00019" summary="基于RocketMQ简单实现分布式事务">
+      <created>1606986779154</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1606986779154</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -501,9 +518,14 @@
     <MESSAGE value="AOP 注解分布式测试" />
     <MESSAGE value="Netty 拆包" />
     <MESSAGE value="读写分离" />
-    <option name="LAST_COMMIT_MESSAGE" value="读写分离" />
+    <MESSAGE value="基于RocketMQ简单实现分布式事务" />
+    <option name="LAST_COMMIT_MESSAGE" value="基于RocketMQ简单实现分布式事务" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607067551954">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607067551954" />
     <state x="718" y="152" key="#com.intellij.ide.util.MemberChooser" timestamp="1606982903229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -527,54 +549,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="378" height="577" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606789095830" />
-    <state width="1435" height="430" key="GridCell.Tab.0.bottom" timestamp="1606815239878">
+    <state width="1877" height="307" key="GridCell.Tab.0.bottom" timestamp="1607068623913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="430" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606815239878" />
-    <state width="1435" height="430" key="GridCell.Tab.0.center" timestamp="1606815239878">
+    <state width="1877" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607068623913" />
+    <state width="1877" height="307" key="GridCell.Tab.0.center" timestamp="1607068623913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="430" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606815239878" />
-    <state width="1435" height="430" key="GridCell.Tab.0.left" timestamp="1606815239878">
+    <state width="1877" height="307" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607068623913" />
+    <state width="1877" height="307" key="GridCell.Tab.0.left" timestamp="1607068623913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="430" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606815239878" />
-    <state width="1435" height="430" key="GridCell.Tab.0.right" timestamp="1606815239878">
+    <state width="1877" height="307" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607068623913" />
+    <state width="1877" height="307" key="GridCell.Tab.0.right" timestamp="1607068623913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="430" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606815239878" />
-    <state width="1435" height="430" key="GridCell.Tab.1.bottom" timestamp="1606815239879">
+    <state width="1877" height="307" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607068623913" />
+    <state width="1877" height="495" key="GridCell.Tab.1.bottom" timestamp="1607067533356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="430" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606815239879" />
-    <state width="1435" height="430" key="GridCell.Tab.1.center" timestamp="1606815239879">
+    <state width="1877" height="495" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607067533356" />
+    <state width="1877" height="495" key="GridCell.Tab.1.center" timestamp="1607067533356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="430" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606815239879" />
-    <state width="1435" height="430" key="GridCell.Tab.1.left" timestamp="1606815239879">
+    <state width="1877" height="495" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607067533356" />
+    <state width="1877" height="495" key="GridCell.Tab.1.left" timestamp="1607067533356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="430" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606815239879" />
-    <state width="1435" height="430" key="GridCell.Tab.1.right" timestamp="1606815239879">
+    <state width="1877" height="495" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607067533356" />
+    <state width="1877" height="495" key="GridCell.Tab.1.right" timestamp="1607067533356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="430" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606815239879" />
+    <state width="1877" height="495" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607067533356" />
     <state x="147" y="65" key="MergeDialog" timestamp="1606745505114">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="147" y="65" key="MergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1606745505114" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1607052999395">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607052999395" />
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1606785232213">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606812881271">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606986784685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606812881271" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606986784685" />
     <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606745476666">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author ：wxw.
- * @date ： 16:10 2020/12/3
+ * @date ： 11:45 2020/12/4
  * @description：商品服务客户端
- *  name = "product-service"是你调用服务端名称
+ * @link: name = "product-service"是你调用服务端名称
  * @version: v_0.0.1
  */
 //@FeignClient(name = "product-service")

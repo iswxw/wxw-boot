@@ -17,13 +17,13 @@ public class Jms {
     /**
      * 配置中心读取 服务器地址
      */
-    @Value("${name_server}")
+    @Value("${name_server:10.1.1.75:9876}")
     private String nameServer;
 
     /**
      * 配置中心读取 主题
      */
-    @Value("${order_topic}")
+    @Value("${order_topic:topic}")
     private String orderTopic;
 
 }

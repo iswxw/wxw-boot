@@ -19,7 +19,7 @@ import java.util.List;
  * @ Version:   v_0.0.1
  */
 @Slf4j
-@Component
+//@Component
 public class XxxConsumer extends BaseConsumer {
 
     @Override
