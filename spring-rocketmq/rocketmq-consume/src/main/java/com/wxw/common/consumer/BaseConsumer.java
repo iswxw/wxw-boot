@@ -8,6 +8,7 @@ import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.MessageListener;
 import org.apache.rocketmq.client.consumer.rebalance.AllocateMessageQueueAveragely;
 import org.apache.rocketmq.client.exception.MQClientException;
+import org.apache.rocketmq.client.producer.TransactionMQProducer;
 import org.apache.rocketmq.remoting.RPCHook;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -27,6 +28,7 @@ public abstract class BaseConsumer {
     protected RocketMQProperties rocketMQProperties;
 
     protected DefaultMQPushConsumer consumer;
+
 
     @PostConstruct
     public void init(){
