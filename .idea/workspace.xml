@@ -22,21 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="Netty 拆包">
-      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/spring-db-table-read-write/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/spring-db-table/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/spring-read-write/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/spring-table-read-write/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/spring-table/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-shardingsphere/src/main/java/com/wxw/ShardingSphereMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="Netty 拆包" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,8 +96,8 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Study_GO\Study_Project\SpringBoot\spring-shiro\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.wxw.common.tools" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Project\wxw2020\wxw-springboot\spring-redis\src\main\java\com\wxw\common" />
@@ -125,8 +111,8 @@
       <recent name="com.wxw.service.impl" />
       <recent name="com.wxw.distribute_lock.single" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.wxw.common.tools" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Study_GO\Study_Project\SpringBoot\spring-shiro\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -282,7 +268,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -305,6 +291,7 @@
       <workItem from="1606566053894" duration="45000" />
       <workItem from="1606745337015" duration="7996000" />
       <workItem from="1606784478464" duration="21991000" />
+      <workItem from="1606831211874" duration="2168000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -453,7 +440,7 @@
     </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -465,6 +452,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式" />
@@ -547,9 +535,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606809058848">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="442" y="203" key="Vcs.Push.Dialog.v2" timestamp="1606839138243">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="442" y="203" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606839138243" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606809058848" />
     <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606745476666">
       <screen x="0" y="0" width="1536" height="834" />
