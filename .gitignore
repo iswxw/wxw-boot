@@ -1,4 +1,3 @@
-.dea/workspace.xm
 ### Package Files #
 ### IntelliJ IDEA ###
 target/
@@ -12,7 +11,7 @@ logs/
 .classpath
 .project
 .checkstyle
-.idea
+.idea/
 prod
 # default
 # Compiled class file

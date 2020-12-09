@@ -22,27 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="调整文件名称">
-      <change afterPath="$PROJECT_DIR$/spring-configuration/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-configuration/src/main/java/com/wxw/ConfigurationMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-configuration/src/main/java/com/wxw/common/exception/RRException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-configuration/src/main/java/com/wxw/common/result/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-configuration/src/main/java/com/wxw/common/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-configuration/src/main/java/com/wxw/common/tools/ApplicationContextTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-configuration/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-quartz/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-quartz/src/main/java/com/wxw/QuartzMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-quartz/src/main/java/com/wxw/common/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-quartz/src/main/java/com/wxw/common/tools/CodeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-quartz/src/main/java/com/wxw/common/tools/CronUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-quartz/src/main/java/com/wxw/common/tools/ScheduleManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-quartz/src/main/java/com/wxw/job/AbstractJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-quartz/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="quartz 任务绑定">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,7 +315,7 @@
       <workItem from="1606977304384" duration="8364000" />
       <workItem from="1607043879602" duration="18825000" />
       <workItem from="1607393427538" duration="972000" />
-      <workItem from="1607498187382" duration="3007000" />
+      <workItem from="1607498187382" duration="3590000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -496,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607393754380</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="quartz 任务绑定">
+      <created>1607501457388</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1607501457388</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -569,7 +558,8 @@
     <MESSAGE value="mq 包 分类" />
     <MESSAGE value="顺序消费" />
     <MESSAGE value="调整文件名称" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整文件名称" />
+    <MESSAGE value="quartz 任务绑定" />
+    <option name="LAST_COMMIT_MESSAGE" value="quartz 任务绑定" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607067551954">
@@ -635,10 +625,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1435" height="430" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607076313865" />
-    <state x="147" y="65" key="MergeDialog" timestamp="1606745505114">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="184" y="81" key="MergeDialog" timestamp="1607501641000">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="147" y="65" key="MergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1606745505114" />
+    <state x="184" y="81" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607501641000" />
+    <state x="845" y="386" width="425" height="267" key="MultipleFileMergeDialog" timestamp="1607501641016">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="845" y="386" width="425" height="267" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607501641016" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1607052999395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -647,14 +642,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607393761054">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607501672596">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607393761054" />
-    <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606745476666">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607501672596" />
+    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607501674898">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1606745476666" />
+    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607501674898" />
+    <state x="640" y="307" key="git4idea.merge.GitPullDialog" timestamp="1607501658735">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607501658735" />
     <state x="223" y="96" key="new project wizard" timestamp="1607498510422">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
