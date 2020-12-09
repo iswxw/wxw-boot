@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/rocketmq-consume.iml" filepath="$PROJECT_DIR$/spring-rocketmq/rocketmq-consume/rocketmq-consume.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/rocketmq-produce.iml" filepath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/rocketmq-produce.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/rocketmq-sdk/rocketmq-sdk.iml" filepath="$PROJECT_DIR$/spring-rocketmq/rocketmq-sdk/rocketmq-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-configuration/spring-configuration.iml" filepath="$PROJECT_DIR$/spring-configuration/spring-configuration.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-shardingsphere/spring-db-table/spring-db-table.iml" filepath="$PROJECT_DIR$/spring-shardingsphere/spring-db-table/spring-db-table.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-shardingsphere/spring-db-table-read-write/spring-db-table-read-write.iml" filepath="$PROJECT_DIR$/spring-shardingsphere/spring-db-table-read-write/spring-db-table-read-write.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-docker/spring-docker.iml" filepath="$PROJECT_DIR$/spring-docker/spring-docker.iml" />
@@ -14,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-sdk/spring-dubbo-sdk.iml" filepath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-sdk/spring-dubbo-sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-elasticsearch/spring-elasticsearch.iml" filepath="$PROJECT_DIR$/spring-elasticsearch/spring-elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-netty/spring-netty.iml" filepath="$PROJECT_DIR$/spring-netty/spring-netty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-quartz/spring-quartz.iml" filepath="$PROJECT_DIR$/spring-quartz/spring-quartz.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-shardingsphere/spring-read-write/spring-read-write.iml" filepath="$PROJECT_DIR$/spring-shardingsphere/spring-read-write/spring-read-write.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-redis/spring-redis.iml" filepath="$PROJECT_DIR$/spring-redis/spring-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-rocketmq/spring-rocketmq.iml" filepath="$PROJECT_DIR$/spring-rocketmq/spring-rocketmq.iml" />

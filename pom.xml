@@ -18,6 +18,8 @@
         <module>spring-zookeeper</module>
         <module>spring-redis</module>
         <module>spring-shardingsphere</module>
+        <module>spring-quartz</module>
+        <module>spring-configuration</module>
     </modules>
     <packaging>pom</packaging>
 
