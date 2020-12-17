@@ -23,8 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="quartz 任务绑定">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,10 +274,10 @@
       <item itemvalue="Application.RetryConsumer" />
       <item itemvalue="Application.RetryProducer" />
       <item itemvalue="Application.UpPackNettyServer" />
-      <item itemvalue="Spring Boot.DockerMain" />
-      <item itemvalue="Spring Boot.MQConsumerMain" />
       <item itemvalue="Application.CodeGenerator" />
+      <item itemvalue="Spring Boot.DockerMain" />
       <item itemvalue="Spring Boot.QuartzMain" />
+      <item itemvalue="Spring Boot.MQConsumerMain" />
     </list>
     <recent_temporary>
       <list>
@@ -315,7 +315,9 @@
       <workItem from="1606977304384" duration="8364000" />
       <workItem from="1607043879602" duration="18825000" />
       <workItem from="1607393427538" duration="972000" />
-      <workItem from="1607498187382" duration="3590000" />
+      <workItem from="1607498187382" duration="4128000" />
+      <workItem from="1607572986583" duration="642000" />
+      <workItem from="1608165844789" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -485,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607501457388</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="quartz 任务绑定">
+      <created>1607501790961</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1607501790961</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -589,26 +598,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="382" height="581" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607071999896" />
-    <state width="1877" height="501" key="GridCell.Tab.0.bottom" timestamp="1607500586031">
+    <state width="1877" height="122" key="GridCell.Tab.0.bottom" timestamp="1607502321134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="501" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607500586031" />
-    <state width="1877" height="501" key="GridCell.Tab.0.center" timestamp="1607500586030">
+    <state width="1877" height="122" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607502321134" />
+    <state width="1877" height="122" key="GridCell.Tab.0.center" timestamp="1607502321134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="501" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607500586030" />
-    <state width="1877" height="501" key="GridCell.Tab.0.left" timestamp="1607500586030">
+    <state width="1877" height="122" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607502321134" />
+    <state width="1877" height="122" key="GridCell.Tab.0.left" timestamp="1607502321134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="501" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607500586030" />
-    <state width="1877" height="501" key="GridCell.Tab.0.right" timestamp="1607500586031">
+    <state width="1877" height="122" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607502321134" />
+    <state width="1877" height="122" key="GridCell.Tab.0.right" timestamp="1607502321134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="501" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607500586031" />
+    <state width="1877" height="122" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607502321134" />
     <state width="1435" height="430" key="GridCell.Tab.1.bottom" timestamp="1607076313865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -642,15 +651,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607501672596">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607501800148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607501672596" />
-    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607501674898">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607501800148" />
+    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608165866587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1606745476666" />
-    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607501674898" />
+    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608165866587" />
     <state x="640" y="307" key="git4idea.merge.GitPullDialog" timestamp="1607501658735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
