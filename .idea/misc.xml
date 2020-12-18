@@ -4,7 +4,17 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/pom.xml" />
+        <option value="$PROJECT_DIR$/xxl-job/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-xxl-job/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-xxl-job/xx-job-core/pom.xml" />
+        <option value="$PROJECT_DIR$/xxl-job-core/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
