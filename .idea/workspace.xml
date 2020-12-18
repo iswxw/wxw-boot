@@ -22,60 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="目录调整">
-      <change afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/src/main/java/com/wxw/XxlJobExecutorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/src/main/java/com/wxw/common/config/XxlJobConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/src/main/java/com/wxw/service/SampleXxlJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/src/main/java/com/wxw/service/jobhandler/JobHandlerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_xuxueli_xxl_job_core_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_5_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="xxl-job 使用">
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-consumer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-consumer/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-consumer/target/classes/com/wxw/service/ProviderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-provider/target/classes/com/wxw/service/ProviderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-provider/target/classes/com/wxw/service/impl/ProviderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-shiro/spring-shiro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shiro/spring-shiro.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/.github/FUNDING.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/.github/ISSUE_TEMPLATE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/.github/PULL_REQUEST_TEMPLATE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/.github/workflows/maven.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/NOTICE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/doc/XXL-JOB-English-Documentation.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/doc/XXL-JOB官方文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/doc/XXL-JOB官方文档.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/doc/XXL-JOB架构图.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/doc/XXL-JOB架构图.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/doc/db/tables_xxl_job.sql" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/doc/db/tables_xxl_job.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/src/main/java/com/xxl/job/admin/core/conf/XxlJobAdminConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/src/main/java/com/xxl/job/admin/core/conf/XxlJobAdminConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/java/com/xxl/job/executor/sample/frameless/FramelessApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/java/com/xxl/job/executor/sample/frameless/config/FrameLessXxlJobConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/java/com/xxl/job/executor/sample/frameless/jobhandler/SampleXxlJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/resources/log4j.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/resources/xxl-job-executor.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/test/java/com/xxl/job/executor/sample/frameless/test/FramelessApplicationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/XxlJobExecutorApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/core/config/XxlJobConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/mvc/controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/service/jobhandler/SampleXxlJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/test/java/com/xxl/job/executor/test/XxlJobExecutorExampleBootApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-xxl-job/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-xxl-job/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-xxl-job/spring-xxl-job.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,8 +277,8 @@
       <item itemvalue="Application.CodeGenerator" />
       <item itemvalue="Spring Boot.DockerMain" />
       <item itemvalue="Spring Boot.QuartzMain" />
-      <item itemvalue="Spring Boot.XxlJobAdminApplication" />
       <item itemvalue="Spring Boot.XxlJobExecutorApplication" />
+      <item itemvalue="Spring Boot.XxlJobAdminApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -367,7 +319,8 @@
       <workItem from="1607572986583" duration="642000" />
       <workItem from="1608165844789" duration="1202000" />
       <workItem from="1608172810182" duration="7000" />
-      <workItem from="1608263056329" duration="13348000" />
+      <workItem from="1608263056329" duration="13686000" />
+      <workItem from="1608284704717" duration="122000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -551,7 +504,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608166409511</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="xxl-job 使用">
+      <created>1608284565603</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1608284565603</updated>
+    </task>
+    <task id="LOCAL-00028" summary="xxl-job 使用">
+      <created>1608284644533</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1608284644533</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView">
@@ -582,6 +549,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/xxl-job" />
+      <path value="$PROJECT_DIR$/spring-xxl-job" />
     </ignored-roots>
     <MESSAGE value="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式" />
     <MESSAGE value="增加es模块" />
@@ -601,7 +569,8 @@
     <MESSAGE value="调整文件名称" />
     <MESSAGE value="quartz 任务绑定" />
     <MESSAGE value="目录调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="目录调整" />
+    <MESSAGE value="xxl-job 使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="xxl-job 使用" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="114" key="#XxlJobAdminApplication_(1)" timestamp="1608271602786">
@@ -635,42 +604,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="382" height="581" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607071999896" />
-    <state width="1435" height="430" key="GridCell.Tab.0.bottom" timestamp="1608284310757">
+    <state width="1435" height="430" key="GridCell.Tab.0.bottom" timestamp="1608284676676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="430" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608284310757" />
-    <state width="1435" height="430" key="GridCell.Tab.0.center" timestamp="1608284310757">
+    <state width="1435" height="430" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608284676676" />
+    <state width="1435" height="430" key="GridCell.Tab.0.center" timestamp="1608284676676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="430" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608284310757" />
-    <state width="1435" height="430" key="GridCell.Tab.0.left" timestamp="1608284310757">
+    <state width="1435" height="430" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608284676676" />
+    <state width="1435" height="430" key="GridCell.Tab.0.left" timestamp="1608284676676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="430" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608284310757" />
-    <state width="1435" height="430" key="GridCell.Tab.0.right" timestamp="1608284310757">
+    <state width="1435" height="430" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608284676676" />
+    <state width="1435" height="430" key="GridCell.Tab.0.right" timestamp="1608284676676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="430" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608284310757" />
-    <state width="1435" height="430" key="GridCell.Tab.1.bottom" timestamp="1608284310757">
+    <state width="1435" height="430" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608284676676" />
+    <state width="1435" height="430" key="GridCell.Tab.1.bottom" timestamp="1608284676677">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="430" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608284310757" />
-    <state width="1435" height="430" key="GridCell.Tab.1.center" timestamp="1608284310757">
+    <state width="1435" height="430" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608284676677" />
+    <state width="1435" height="430" key="GridCell.Tab.1.center" timestamp="1608284676676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="430" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608284310757" />
-    <state width="1435" height="430" key="GridCell.Tab.1.left" timestamp="1608284310757">
+    <state width="1435" height="430" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608284676676" />
+    <state width="1435" height="430" key="GridCell.Tab.1.left" timestamp="1608284676676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="430" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608284310757" />
-    <state width="1435" height="430" key="GridCell.Tab.1.right" timestamp="1608284310757">
+    <state width="1435" height="430" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608284676676" />
+    <state width="1435" height="430" key="GridCell.Tab.1.right" timestamp="1608284676677">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="430" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608284310757" />
+    <state width="1435" height="430" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608284676677" />
     <state x="184" y="81" key="MergeDialog" timestamp="1607501641000">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -680,18 +649,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="845" y="386" width="425" height="267" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607501641016" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1608271198801">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1608284825472">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608271198801" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608284825472" />
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1606785232213">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608166416794">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608284764823">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608166416794" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608284764823" />
     <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608165866587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

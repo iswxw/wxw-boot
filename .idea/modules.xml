@@ -29,7 +29,6 @@
       <module fileurl="file://$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/xxl-job-admin.iml" filepath="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/xxl-job-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/xxl-job-admin (2) (com.xuxueli).iml" filepath="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/xxl-job-admin (2) (com.xuxueli).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-xxl-job/xxl-job-core/xxl-job-core.iml" filepath="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/xxl-job-core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-xxl-job/xxl-job-core/xxl-job-core.iml" filepath="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/xxl-job-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-xxl-job/xxl-job-core/xxl-job-core (2) (com.xuxueli).iml" filepath="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/xxl-job-core (2) (com.xuxueli).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/xxl-job-executor-sample-frameless.iml" filepath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/xxl-job-executor-sample-frameless.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/xxl-job-executor-sample-springboot.iml" filepath="$PROJECT_DIR$/spring-xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/xxl-job-executor-sample-springboot.iml" />
