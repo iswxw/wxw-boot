@@ -1,7 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.wxw.xxljob</groupId>
+    <modules>
+        <module>xxl-job-admin</module>
+        <module>xxl-job-core</module>
+        <module>xxl-job-springboot</module>
+    </modules>
+    <parent>
+        <artifactId>wxw-springboot</artifactId>
+        <groupId>com.wxw</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <groupId>com.wxw.xxljob</groupId>
 	<artifactId>spring-xxl-job</artifactId>
 	<version>2.3.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -9,12 +19,6 @@
 	<name>${project.artifactId}</name>
 	<description>A distributed task scheduling framework.</description>
 	<url>https://www.xuxueli.com/</url>
-
-	<modules>
-		<module>xxl-job-core</module>
-		<module>xxl-job-admin</module>
-		<module>xxl-job-springboot</module>
-    </modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -56,12 +60,6 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
-	<build>
-		<plugins>
-		</plugins>
-	</build>
-
 
 	<licenses>
 		<license>
@@ -106,22 +104,22 @@
 						</executions>
 					</plugin>
 					<!-- Javadoc -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>${maven-javadoc-plugin.version}</version>
-						<executions>
-							<execution>
-								<phase>package</phase>
-								<goals>
-									<goal>jar</goal>
-								</goals>
-								<configuration>
-									<doclint>none</doclint>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
+<!--					<plugin>-->
+<!--						<groupId>org.apache.maven.plugins</groupId>-->
+<!--						<artifactId>maven-javadoc-plugin</artifactId>-->
+<!--						<version>${maven-javadoc-plugin.version}</version>-->
+<!--						<executions>-->
+<!--							<execution>-->
+<!--								<phase>package</phase>-->
+<!--								<goals>-->
+<!--									<goal>jar</goal>-->
+<!--								</goals>-->
+<!--								<configuration>-->
+<!--									<doclint>none</doclint>-->
+<!--								</configuration>-->
+<!--							</execution>-->
+<!--						</executions>-->
+<!--					</plugin>-->
 					<!-- GPG -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>

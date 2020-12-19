@@ -1,8 +1,6 @@
-### Package Files #
 ### IntelliJ IDEA ###
 target/
 release.properties
-dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 logs/
@@ -62,7 +60,4 @@ mvnw
 mvnw.cmd
 .mvn
 /bin/
-
-
-.flattened-pom.xml
 
