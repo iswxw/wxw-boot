@@ -1,8 +1,5 @@
 ### IntelliJ IDEA ###
 target/
-release.properties
-buildNumber.properties
-.mvn/timing.properties
 logs/
 *.iml
 .settings/
@@ -51,7 +48,7 @@ data/
 nbproject/private/
 build/
 nbbuild/
-dist/
+# dist/
 nbdist/
 
 ### gradle
