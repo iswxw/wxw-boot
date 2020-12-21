@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-provider/spring-dubbo-provider.iml" filepath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-provider/spring-dubbo-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-dubbo/spring-dubbo-sdk/spring-dubbo-sdk.iml" filepath="$PROJECT_DIR$/spring-dubbo/spring-dubbo-sdk/spring-dubbo-sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-elasticsearch/spring-elasticsearch.iml" filepath="$PROJECT_DIR$/spring-elasticsearch/spring-elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mongodb/spring-mongodb.iml" filepath="$PROJECT_DIR$/spring-mongodb/spring-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-netty/spring-netty.iml" filepath="$PROJECT_DIR$/spring-netty/spring-netty.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-quartz/spring-quartz.iml" filepath="$PROJECT_DIR$/spring-quartz/spring-quartz.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-shardingsphere/spring-read-write/spring-read-write.iml" filepath="$PROJECT_DIR$/spring-shardingsphere/spring-read-write/spring-read-write.iml" />

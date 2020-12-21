@@ -22,17 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="xxl-job 使用">
-      <change afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/src/main/java/com/wxw/service/jobhandler/XxxMethodJobDemo.java" afterDir="false" />
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="任务创建和基本功能测试">
+      <change afterPath="$PROJECT_DIR$/spring-mongodb/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/MongodbApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/common/config/MongodbConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/domain/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mongodb/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/src/main/java/com/xxl/job/core/handler/IJobHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/src/main/java/com/xxl/job/core/handler/IJobHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/src/main/java/com/xxl/job/core/handler/annotation/JobHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/src/main/java/com/xxl/job/core/handler/annotation/JobHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/src/main/java/com/xxl/job/core/handler/impl/GlueJobHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/src/main/java/com/xxl/job/core/handler/impl/GlueJobHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/src/main/java/com/wxw/service/SampleXxlJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/src/main/java/com/wxw/service/SampleXxlJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/src/main/java/com/wxw/service/jobhandler/JobHandlerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/xxl-job-springboot/src/main/java/com/wxw/service/jobhandler/XxxClassJobDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-xxl-job/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-xxl-job/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -143,7 +146,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.XxlJobExecutorApplication">
+  <component name="RunManager" selected="JUnit.TestMongoCRUD.testCRUD">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wxw.common.tools.CodeGenerator" />
       <module name="spring-quartz" />
@@ -157,28 +160,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RetryConsumer" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wxw.common.consumer.retry.RetryConsumer" />
-      <module name="rocketmq-consume" />
+    <configuration name="TestMongoCRUD.testCRUD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mongodb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wxw.common.consumer.retry.*" />
+          <option name="PATTERN" value="com.wxw.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.wxw.test" />
+      <option name="MAIN_CLASS_NAME" value="com.wxw.test.TestMongoCRUD" />
+      <option name="METHOD_NAME" value="testCRUD" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RetryProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wxw.common.producer.retry.RetryProducer" />
-      <module name="rocketmq-produce" />
+    <configuration name="TestMongoCRUD.testMongo_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mongodb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wxw.common.producer.retry.*" />
+          <option name="PATTERN" value="com.wxw.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.wxw.test" />
+      <option name="MAIN_CLASS_NAME" value="com.wxw.test.TestMongoCRUD" />
+      <option name="METHOD_NAME" value="testMongo_1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMongoCRUD.testMongo_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-mongodb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wxw.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wxw.test" />
+      <option name="MAIN_CLASS_NAME" value="com.wxw.test.TestMongoCRUD" />
+      <option name="METHOD_NAME" value="testMongo_2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -282,20 +307,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RetryConsumer" />
-      <item itemvalue="Application.RetryProducer" />
       <item itemvalue="Application.CodeGenerator" />
       <item itemvalue="Spring Boot.DockerMain" />
       <item itemvalue="Spring Boot.QuartzMain" />
       <item itemvalue="Spring Boot.XxlJobExecutorApplication" />
       <item itemvalue="Spring Boot.XxlJobAdminApplication" />
+      <item itemvalue="JUnit.TestMongoCRUD.testMongo_2" />
+      <item itemvalue="JUnit.TestMongoCRUD.testMongo_1" />
+      <item itemvalue="JUnit.TestMongoCRUD.testCRUD" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestMongoCRUD.testCRUD" />
+        <item itemvalue="JUnit.TestMongoCRUD.testMongo_1" />
+        <item itemvalue="JUnit.TestMongoCRUD.testMongo_2" />
         <item itemvalue="Spring Boot.XxlJobAdminApplication" />
         <item itemvalue="Application.CodeGenerator" />
-        <item itemvalue="Application.RetryConsumer" />
-        <item itemvalue="Application.RetryProducer" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +358,7 @@
       <workItem from="1608172810182" duration="7000" />
       <workItem from="1608263056329" duration="13686000" />
       <workItem from="1608284704717" duration="382000" />
-      <workItem from="1608511453787" duration="5921000" />
+      <workItem from="1608511453787" duration="21925000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -550,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608511654754</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="任务创建和基本功能测试">
+      <created>1608517511272</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1608517511272</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView">
@@ -602,7 +636,8 @@
     <MESSAGE value="quartz 任务绑定" />
     <MESSAGE value="目录调整" />
     <MESSAGE value="xxl-job 使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="xxl-job 使用" />
+    <MESSAGE value="任务创建和基本功能测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="任务创建和基本功能测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="114" key="#XxlJobAdminApplication_(1)" timestamp="1608271602786">
@@ -636,42 +671,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="388" height="587" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608511689906" />
-    <state width="1435" height="407" key="GridCell.Tab.0.bottom" timestamp="1608516699622">
+    <state width="1877" height="326" key="GridCell.Tab.0.bottom" timestamp="1608545585732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="407" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608516699622" />
-    <state width="1435" height="407" key="GridCell.Tab.0.center" timestamp="1608516699622">
+    <state width="1877" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608545585732" />
+    <state width="1877" height="326" key="GridCell.Tab.0.center" timestamp="1608545585732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="407" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608516699622" />
-    <state width="1435" height="407" key="GridCell.Tab.0.left" timestamp="1608516699622">
+    <state width="1877" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608545585732" />
+    <state width="1877" height="326" key="GridCell.Tab.0.left" timestamp="1608545585732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="407" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608516699622" />
-    <state width="1435" height="407" key="GridCell.Tab.0.right" timestamp="1608516699622">
+    <state width="1877" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608545585732" />
+    <state width="1877" height="326" key="GridCell.Tab.0.right" timestamp="1608545585732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1435" height="407" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608516699622" />
-    <state width="1435" height="407" key="GridCell.Tab.1.bottom" timestamp="1608516699622">
+    <state width="1877" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608545585732" />
+    <state width="1435" height="398" key="GridCell.Tab.1.bottom" timestamp="1608539264331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="407" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608516699622" />
-    <state width="1435" height="407" key="GridCell.Tab.1.center" timestamp="1608516699622">
+    <state width="1435" height="398" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608539264331" />
+    <state width="1435" height="398" key="GridCell.Tab.1.center" timestamp="1608539264331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="407" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608516699622" />
-    <state width="1435" height="407" key="GridCell.Tab.1.left" timestamp="1608516699622">
+    <state width="1435" height="398" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608539264331" />
+    <state width="1435" height="398" key="GridCell.Tab.1.left" timestamp="1608539264331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="407" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608516699622" />
-    <state width="1435" height="407" key="GridCell.Tab.1.right" timestamp="1608516699622">
+    <state width="1435" height="398" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608539264331" />
+    <state width="1435" height="398" key="GridCell.Tab.1.right" timestamp="1608539264331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1435" height="407" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608516699622" />
+    <state width="1435" height="398" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608539264331" />
     <state x="184" y="81" key="MergeDialog" timestamp="1607501641000">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -689,15 +724,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608511705072">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608517517533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608511705072" />
-    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608511870460">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608517517533" />
+    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608535588550">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1606745476666" />
-    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608511870460" />
+    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608535588550" />
     <state x="662" y="252" width="596" height="536" key="find.popup" timestamp="1608283650851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -706,10 +741,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608511510903" />
-    <state x="223" y="96" key="new project wizard" timestamp="1608272208645">
+    <state x="223" y="96" key="new project wizard" timestamp="1608521294268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="178" y="77" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1606745412176" />
-    <state x="223" y="96" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1608272208645" />
+    <state x="223" y="96" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1608521294268" />
   </component>
 </project>

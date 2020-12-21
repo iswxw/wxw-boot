@@ -1,0 +1,12 @@
+
+# spring boot 配置
+spring:
+  data:
+    mongodb:
+      uri: "mongodb://localhost:27017/wxw-test"
+  application:
+    name: spring-mongodb
+
+# 服务端口
+server:
+  port: 8081

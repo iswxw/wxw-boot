@@ -20,6 +20,7 @@
         <module>spring-shardingsphere</module>
         <module>spring-quartz</module>
         <module>spring-configuration</module>
+        <module>spring-mongodb</module>
     </modules>
     <packaging>pom</packaging>
 

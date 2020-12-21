@@ -7,14 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-table-read-write" />
         <module name="spring-dubbo-provider" />
         <module name="xxl-job-executor-sample-springboot" />
-        <module name="spring-table-read-write" />
-        <module name="xxl-job-core (2) (com.xuxueli)" />
+        <module name="spring-mongodb" />
         <module name="spring-read-write" />
-        <module name="xxl-job-core" />
         <module name="spring-redis" />
         <module name="spring-netty" />
+        <module name="spring-dubbo-sdk" />
         <module name="spring-dubbo-consumer" />
         <module name="spring-quartz" />
         <module name="spring-shiro" />
@@ -22,17 +22,18 @@
         <module name="xxl-job-executor-sample-frameless" />
         <module name="spring-configuration" />
         <module name="spring-db-table-read-write" />
+        <module name="xxl-job-core" />
         <module name="xxl-job-admin" />
-        <module name="spring-dubbo-sdk" />
         <module name="spring-zookeeper" />
         <module name="rocketmq-sdk" />
-        <module name="xxl-job-springboot" />
+        <module name="xxl-job-core (2) (com.xuxueli)" />
         <module name="spring-docker" />
-        <module name="xxl-job-admin (2) (com.xuxueli)" />
         <module name="spring-elasticsearch" />
         <module name="spring-table" />
         <module name="rocketmq-consume" />
+        <module name="xxl-job-admin (2) (com.xuxueli)" />
         <module name="rocketmq-produce" />
+        <module name="xxl-job-springboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -48,6 +49,7 @@
       <module name="spring-dubbo-provider" target="1.8" />
       <module name="spring-dubbo-sdk" target="1.8" />
       <module name="spring-elasticsearch" target="1.8" />
+      <module name="spring-mongodb" target="1.8" />
       <module name="spring-netty" target="1.8" />
       <module name="spring-quartz" target="1.8" />
       <module name="spring-read-write" target="1.8" />
