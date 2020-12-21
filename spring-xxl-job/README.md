@@ -8,7 +8,8 @@
 XXL-JOB是一个分布式任务调度平台，其核心设计目标是开发迅速、学习简单、轻量级、易扩展。现已开放源代码并接入多家公司线上产品线，开箱即用。
 
 ### 1.2 社区交流    
-- [社区交流](https://www.xuxueli.com/page/community.html)
+- [社区交流](https://www.xuxueli.com/page/community.html) 
+- *我司大众点评目前已接入XXL-JOB，内部别名《Ferrari》（Ferrari基于XXL-JOB的V1.1版本定制而成，新接入应用推荐升级最新版本）。* 
 
 ### 1.3 特性
 - 1、简单：支持通过Web页面对任务进行CRUD操作，操作简单，一分钟上手；

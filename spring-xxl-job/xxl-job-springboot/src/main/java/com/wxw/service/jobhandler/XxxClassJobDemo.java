@@ -1,11 +1,15 @@
 package com.wxw.service.jobhandler;
 
+import com.xxl.job.core.context.XxlJobHelper;
 import com.xxl.job.core.handler.IJobHandler;
+import org.springframework.stereotype.Component;
+
+import java.time.LocalDateTime;
 
 /**
  * @author ：wxw.
  * @date ： 17:20 2020/12/18
- * @description：任务Handler示例（Bean模式）
+ * @description：任务Handler示例（Bean模式 类模式）----7.30 版本 v2.2.0 Release Notes[2020-04-14] 版本中已经移除
  *  开发步骤：
  *     1、继承"IJobHandler"：“com.xxl.job.core.handler.IJobHandler”；
  *     2、注册到Spring容器：添加“@Component”注解，被Spring容器扫描为Bean实例；
@@ -14,11 +18,12 @@ import com.xxl.job.core.handler.IJobHandler;
  * @link:
  * @version: v_0.0.1
  */
-
-public class JobHandlerDemo extends IJobHandler {
+@Component
+@Deprecated
+public class XxxClassJobDemo extends IJobHandler {
 
     @Override
     public void execute() throws Exception {
-
+        XxlJobHelper.log("基于类的定时任务执行：{}", LocalDateTime.now());
     }
 }

@@ -1,5 +1,5 @@
 FROM openjdk:8-jre-slim
-MAINTAINER wxw
+MAINTAINER weixiaowei
 
 ENV PARAMS=""
 

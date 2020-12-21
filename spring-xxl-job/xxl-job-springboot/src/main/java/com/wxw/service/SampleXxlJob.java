@@ -22,6 +22,13 @@ import java.util.concurrent.TimeUnit;
  * @author ：wxw.
  * @date ： 14:55 2020/12/18
  * @description：XxlJob开发示例（Bean模式）
+ * [BEAN模式（类形式）]
+ *  1、开发一个继承自"com.xxl.job.core.handler.IJobHandler"的JobHandler类，实现其中任务方法。
+ *  2、手动通过如下方式注入到执行器容器。
+ *  ```
+ *  XxlJobExecutor.registJobHandler("demoJobHandler", new DemoJobHandler());
+ *  ```
+ * [BEAN模式（方法形式）]
  *  开发步骤：
  *      1、任务开发：在Spring Bean实例中，开发Job方法；
  *      2、注解配置：为Job方法添加注解
@@ -31,17 +38,6 @@ import java.util.concurrent.TimeUnit;
  *      4、任务结果：默认任务结果为 "成功" 状态，不需要主动设置；如有诉求，比如设置任务结果为失败，可以通过 "XxlJobHelper.handleFail/handleSuccess" 自主设置任务结果；
  * @link:
  * @version: v_0.0.1
- */
-/**
- * XxlJob开发示例（Bean模式）
- *
- * 开发步骤：
- *      1、任务开发：在Spring Bean实例中，开发Job方法；
- *      2、注解配置：为Job方法添加注解 "@XxlJob(value="自定义jobhandler名称", init = "JobHandler初始化方法", destroy = "JobHandler销毁方法")"，注解value值对应的是调度中心新建任务的JobHandler属性的值。
- *      3、执行日志：需要通过 "XxlJobHelper.log" 打印执行日志；
- *      4、任务结果：默认任务结果为 "成功" 状态，不需要主动设置；如有诉求，比如设置任务结果为失败，可以通过 "XxlJobHelper.handleFail/handleSuccess" 自主设置任务结果；
- *
- * @author xuxueli 2019-12-11 21:52:51
  */
 @Component
 public class SampleXxlJob {

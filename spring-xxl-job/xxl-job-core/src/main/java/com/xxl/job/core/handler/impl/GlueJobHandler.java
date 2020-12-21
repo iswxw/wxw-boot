@@ -12,6 +12,7 @@ public class GlueJobHandler extends IJobHandler {
 
 	private long glueUpdatetime;
 	private IJobHandler jobHandler;
+
 	public GlueJobHandler(IJobHandler jobHandler, long glueUpdatetime) {
 		this.jobHandler = jobHandler;
 		this.glueUpdatetime = glueUpdatetime;

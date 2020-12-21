@@ -1,5 +1,8 @@
 package com.xxl.job.core.handler;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * job handler
  *
@@ -7,6 +10,7 @@ package com.xxl.job.core.handler;
  */
 public abstract class IJobHandler {
 
+	protected final Logger logger = LoggerFactory.getLogger(getClass());
 
 	/**
 	 * execute handler, invoked when executor receives a scheduling request
