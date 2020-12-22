@@ -11,7 +11,6 @@
         <module>spring-dubbo</module>
         <module>spring-elasticsearch</module>
         <module>spring-shiro</module>
-        <module>spring-xxl-job</module>
         <module>spring-rocketmq</module>
         <module>spring-docker</module>
         <module>spring-netty</module>
@@ -21,6 +20,7 @@
         <module>spring-quartz</module>
         <module>spring-configuration</module>
         <module>spring-mongodb</module>
+        <module>spring-xxl-job</module>
     </modules>
     <packaging>pom</packaging>
 

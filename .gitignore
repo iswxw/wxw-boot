@@ -7,7 +7,7 @@ logs/
 .project
 .checkstyle
 .idea/
-prod
+#.prod
 # default
 # Compiled class file
 *.class
