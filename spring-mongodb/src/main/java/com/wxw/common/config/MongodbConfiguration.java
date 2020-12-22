@@ -5,6 +5,7 @@ import com.mongodb.client.MongoClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 /**
  * @author ：wxw.
@@ -14,6 +15,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
  * @version: v_0.0.1
  */
 @Configuration
+@EnableMongoRepositories("com.wxw.dao")
 public class MongodbConfiguration {
 
     @Bean
