@@ -22,17 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="文档填充">
-      <change afterPath="$PROJECT_DIR$/spring-mongodb/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/dao/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/domain/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="Mongo简单操作">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/common/config/MongodbConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/common/config/MongodbConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mongodb/src/main/java/com/wxw/domain/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,7 +355,7 @@
       <workItem from="1608284704717" duration="382000" />
       <workItem from="1608511453787" duration="22052000" />
       <workItem from="1608546617530" duration="357000" />
-      <workItem from="1608597826154" duration="7737000" />
+      <workItem from="1608597826154" duration="8539000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -604,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608546719468</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Mongo简单操作">
+      <created>1608606238209</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1608606238209</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -659,7 +657,8 @@
     <MESSAGE value="任务创建和基本功能测试" />
     <MESSAGE value="简单实现mongodb CRUD" />
     <MESSAGE value="文档填充" />
-    <option name="LAST_COMMIT_MESSAGE" value="文档填充" />
+    <MESSAGE value="Mongo简单操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mongo简单操作" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="114" key="#XxlJobAdminApplication_(1)" timestamp="1608271602786">
@@ -746,10 +745,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608546724348">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608606240097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608546724348" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608606240097" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1608602339871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
