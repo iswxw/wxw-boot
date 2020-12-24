@@ -25,6 +25,10 @@ spring:
             # scheduler的实例名
             instanceName: 定时调度
             instanceId: AUTO
+            # 触发器循环等待时长
+            idleWaitTime: 30000
+            # 等待时间范围内处理触发器的个数
+            batchTriggerAcquisitionMaxCount: 1
           rmi:
             export: false
             proxy: false
