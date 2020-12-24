@@ -23,6 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="fix-moudle">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -367,7 +368,7 @@
       <workItem from="1608511453787" duration="22052000" />
       <workItem from="1608546617530" duration="357000" />
       <workItem from="1608597826154" duration="9305000" />
-      <workItem from="1608783656015" duration="9921000" />
+      <workItem from="1608783656015" duration="9999000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -635,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608797116401</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="fix-moudle">
+      <created>1608797174776</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1608797174776</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView">
@@ -780,10 +788,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608797125750">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608797204567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608797125750" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608797204567" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1608602339871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -797,10 +805,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="662" y="252" width="596" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608283650851" />
-    <state x="640" y="307" key="git4idea.merge.GitPullDialog" timestamp="1608511510903">
+    <state x="640" y="307" key="git4idea.merge.GitPullDialog" timestamp="1608797183334">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608511510903" />
+    <state x="640" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608797183334" />
     <state x="223" y="96" key="new project wizard" timestamp="1608521294268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
