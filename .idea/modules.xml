@@ -24,7 +24,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-shiro/spring-shiro.iml" filepath="$PROJECT_DIR$/spring-shiro/spring-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-shardingsphere/spring-table/spring-table.iml" filepath="$PROJECT_DIR$/spring-shardingsphere/spring-table/spring-table.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-shardingsphere/spring-table-read-write/spring-table-read-write.iml" filepath="$PROJECT_DIR$/spring-shardingsphere/spring-table-read-write/spring-table-read-write.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-xxljob/spring-xxl-job.iml" filepath="$PROJECT_DIR$/spring-xxljob/spring-xxl-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-xxljob/spring-xxljob.iml" filepath="$PROJECT_DIR$/spring-xxljob/spring-xxljob.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-zookeeper/spring-zookeeper.iml" filepath="$PROJECT_DIR$/spring-zookeeper/spring-zookeeper.iml" />
       <module fileurl="file://$PROJECT_DIR$/wxw-springboot.iml" filepath="$PROJECT_DIR$/wxw-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-xxljob/xxl-job-admin/xxl-job-admin.iml" filepath="$PROJECT_DIR$/spring-xxljob/xxl-job-admin/xxl-job-admin.iml" />

@@ -59,7 +59,7 @@
       <module name="spring-shiro" target="1.8" />
       <module name="spring-table" target="1.8" />
       <module name="spring-table-read-write" target="1.8" />
-      <module name="spring-xxl-job" target="1.8" />
+      <module name="spring-xxljob" target="1.8" />
       <module name="spring-zookeeper" target="1.8" />
       <module name="wxw-springboot" target="1.8" />
       <module name="xx-job-core" target="1.8" />
