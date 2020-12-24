@@ -22,14 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-quartz/src/main/java/com/wxw/common/config/ScheduleFactoryConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="fix-moudle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-configuration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-configuration/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-quartz/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-quartz/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,7 +367,7 @@
       <workItem from="1608511453787" duration="22052000" />
       <workItem from="1608546617530" duration="357000" />
       <workItem from="1608597826154" duration="9305000" />
-      <workItem from="1608783656015" duration="9675000" />
+      <workItem from="1608783656015" duration="9921000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -627,7 +621,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608606869832</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="基本配置">
+      <created>1608796959333</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1608796959333</updated>
+    </task>
+    <task id="LOCAL-00038" summary="fix-moudle">
+      <created>1608797116401</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1608797116401</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -683,7 +691,9 @@
     <MESSAGE value="简单实现mongodb CRUD" />
     <MESSAGE value="文档填充" />
     <MESSAGE value="Mongo简单操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mongo简单操作" />
+    <MESSAGE value="基本配置" />
+    <MESSAGE value="fix-moudle" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix-moudle" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="114" key="#XxlJobAdminApplication_(1)" timestamp="1608271602786">
@@ -770,10 +780,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608626358720">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608797125750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608626358720" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608797125750" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1608602339871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
