@@ -19,6 +19,8 @@
     <file url="file://$PROJECT_DIR$/spring-elasticsearch" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-elasticsearch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-elasticsearch/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-memcached/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-memcached/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-mongodb/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-mongodb/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-netty/src/main/java" charset="UTF-8" />

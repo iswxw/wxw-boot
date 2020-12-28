@@ -12,22 +12,23 @@
         <module name="xxl-job-executor-sample-springboot" />
         <module name="spring-mongodb" />
         <module name="spring-read-write" />
-        <module name="xxl-job-core" />
         <module name="spring-redis" />
         <module name="spring-netty" />
-        <module name="spring-shiro" />
+        <module name="spring-dubbo-sdk" />
         <module name="spring-dubbo-consumer" />
         <module name="spring-quartz" />
-        <module name="spring-configuration" />
+        <module name="spring-shiro" />
         <module name="spring-db-table" />
         <module name="xxl-job-executor-sample-frameless" />
+        <module name="spring-configuration" />
         <module name="spring-db-table-read-write" />
+        <module name="xxl-job-core" />
         <module name="xxl-job-admin" />
-        <module name="spring-dubbo-sdk" />
+        <module name="spring-zookeeper" />
         <module name="rocketmq-sdk" />
         <module name="xxl-job-core (2) (com.xuxueli)" />
         <module name="spring-docker" />
-        <module name="spring-zookeeper" />
+        <module name="spring-memcached" />
         <module name="spring-elasticsearch" />
         <module name="spring-table" />
         <module name="rocketmq-consume" />
@@ -49,6 +50,7 @@
       <module name="spring-dubbo-provider" target="1.8" />
       <module name="spring-dubbo-sdk" target="1.8" />
       <module name="spring-elasticsearch" target="1.8" />
+      <module name="spring-memcached" target="1.8" />
       <module name="spring-mongodb" target="1.8" />
       <module name="spring-netty" target="1.8" />
       <module name="spring-quartz" target="1.8" />
