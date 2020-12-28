@@ -22,18 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="fix-moudle">
-      <change afterPath="$PROJECT_DIR$/spring-memcached/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-memcached/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-memcached/src/main/java/com/wxw/MemcachedApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-memcached/src/main/java/com/wxw/common/conf/MemcachedConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-memcached/src/main/java/com/wxw/common/properties/XMemcachedProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-memcached/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="memcached 整合和应用">
+      <change afterPath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/leaderelection/LeaderElectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,13 +311,13 @@
     <list>
       <item itemvalue="JUnit.TestMongoRepository.testByCustomMethod" />
       <item itemvalue="JUnit.testMongoClient.testClient" />
+      <item itemvalue="JUnit.TestMemcached.test" />
+      <item itemvalue="JUnit.TestProperties.test_1" />
+      <item itemvalue="JUnit.TestProperties" />
       <item itemvalue="Spring Boot.DockerMain" />
       <item itemvalue="Spring Boot.QuartzMain" />
       <item itemvalue="Spring Boot.XxlJobExecutorApplication" />
       <item itemvalue="Spring Boot.XxlJobAdminApplication" />
-      <item itemvalue="JUnit.TestMemcached.test" />
-      <item itemvalue="JUnit.TestProperties.test_1" />
-      <item itemvalue="JUnit.TestProperties" />
     </list>
     <recent_temporary>
       <list>
@@ -378,7 +369,8 @@
       <workItem from="1608597826154" duration="9305000" />
       <workItem from="1608783656015" duration="10035000" />
       <workItem from="1608797325864" duration="126000" />
-      <workItem from="1609116119662" duration="5913000" />
+      <workItem from="1609116119662" duration="6066000" />
+      <workItem from="1609140622434" duration="1885000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -674,7 +666,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608797423710</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="memcached 整合和应用">
+      <created>1609123127548</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1609123127548</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -707,7 +706,6 @@
       <path value="$PROJECT_DIR$/xxl-job" />
       <path value="$PROJECT_DIR$/spring-xxl-job" />
     </ignored-roots>
-    <MESSAGE value="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式" />
     <MESSAGE value="增加es模块" />
     <MESSAGE value="增加ES文档" />
     <MESSAGE value="shiro 安全框架基本架构搭建" />
@@ -732,7 +730,8 @@
     <MESSAGE value="Mongo简单操作" />
     <MESSAGE value="基本配置" />
     <MESSAGE value="fix-moudle" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix-moudle" />
+    <MESSAGE value="memcached 整合和应用" />
+    <option name="LAST_COMMIT_MESSAGE" value="memcached 整合和应用" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="114" key="#XxlJobAdminApplication_(1)" timestamp="1608271602786">
@@ -766,26 +765,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="388" height="587" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608511689906" />
-    <state width="1877" height="240" key="GridCell.Tab.0.bottom" timestamp="1609122088440">
+    <state width="1877" height="400" key="GridCell.Tab.0.bottom" timestamp="1609123161261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609122088440" />
-    <state width="1877" height="240" key="GridCell.Tab.0.center" timestamp="1609122088439">
+    <state width="1877" height="400" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609123161261" />
+    <state width="1877" height="400" key="GridCell.Tab.0.center" timestamp="1609123161261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609122088439" />
-    <state width="1877" height="240" key="GridCell.Tab.0.left" timestamp="1609122088439">
+    <state width="1877" height="400" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609123161261" />
+    <state width="1877" height="400" key="GridCell.Tab.0.left" timestamp="1609123161261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609122088439" />
-    <state width="1877" height="240" key="GridCell.Tab.0.right" timestamp="1609122088440">
+    <state width="1877" height="400" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609123161261" />
+    <state width="1877" height="400" key="GridCell.Tab.0.right" timestamp="1609123161261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609122088440" />
+    <state width="1877" height="400" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609123161261" />
     <state width="1877" height="495" key="GridCell.Tab.1.bottom" timestamp="1608626361319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -819,19 +818,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608797429243">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609123136178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608797429243" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609123136178" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1608602339871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1608602339871" />
-    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609116135439">
+    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609140627971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1606745476666" />
-    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609116135439" />
+    <state x="718" y="412" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609140627971" />
     <state x="662" y="252" width="596" height="536" key="find.popup" timestamp="1608283650851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
