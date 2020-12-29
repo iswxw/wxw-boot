@@ -23,8 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="memcached 整合和应用">
-      <change afterPath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/leaderelection/LeaderElectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/leaderelection/LeaderSelectorClient1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-zookeeper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-zookeeper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-zookeeper/spring-zookeeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-zookeeper/spring-zookeeper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/leaderelection/LeaderElectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/leaderelection/LeaderElectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +141,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestMemcached.test">
+  <component name="RunManager" selected="Application.LeaderSelectorClient1">
+    <configuration name="LeaderSelectorClient1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wxw.leaderelection.LeaderSelectorClient1" />
+      <module name="spring-zookeeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wxw.leaderelection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestMemcached.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-memcached" />
       <extension name="coverage">
@@ -149,22 +166,6 @@
       <option name="PACKAGE_NAME" value="com.wxw.test" />
       <option name="MAIN_CLASS_NAME" value="com.wxw.test.TestMemcached" />
       <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMongoRepository.testByCustomMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mongodb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wxw.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wxw.test" />
-      <option name="MAIN_CLASS_NAME" value="com.wxw.test.TestMongoRepository" />
-      <option name="METHOD_NAME" value="testByCustomMethod" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -309,7 +310,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestMongoRepository.testByCustomMethod" />
       <item itemvalue="JUnit.testMongoClient.testClient" />
       <item itemvalue="JUnit.TestMemcached.test" />
       <item itemvalue="JUnit.TestProperties.test_1" />
@@ -318,14 +318,15 @@
       <item itemvalue="Spring Boot.QuartzMain" />
       <item itemvalue="Spring Boot.XxlJobExecutorApplication" />
       <item itemvalue="Spring Boot.XxlJobAdminApplication" />
+      <item itemvalue="Application.LeaderSelectorClient1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeaderSelectorClient1" />
         <item itemvalue="JUnit.TestMemcached.test" />
         <item itemvalue="JUnit.TestProperties" />
         <item itemvalue="JUnit.TestProperties.test_1" />
         <item itemvalue="JUnit.testMongoClient.testClient" />
-        <item itemvalue="JUnit.TestMongoRepository.testByCustomMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -370,7 +371,8 @@
       <workItem from="1608783656015" duration="10035000" />
       <workItem from="1608797325864" duration="126000" />
       <workItem from="1609116119662" duration="6066000" />
-      <workItem from="1609140622434" duration="1885000" />
+      <workItem from="1609140622434" duration="1912000" />
+      <workItem from="1609205238362" duration="8106000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -673,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609123127548</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="memcached 整合和应用">
+      <created>1609149974114</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1609149974114</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -742,11 +751,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607067551954" />
-    <state x="718" y="152" key="#com.intellij.ide.util.MemberChooser" timestamp="1608790346074">
+    <state x="718" y="152" key="#com.intellij.ide.util.MemberChooser" timestamp="1609205894985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1606748508224" />
-    <state x="718" y="152" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608790346074" />
+    <state x="718" y="152" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609205894985" />
     <state x="406" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606985164862">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -818,10 +827,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609123136178">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609149978411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609123136178" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609149978411" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1608602339871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

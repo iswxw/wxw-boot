@@ -1,5 +1,6 @@
 package com.wxw.leaderelection;
 
+import org.apache.curator.framework.recipes.leader.LeaderSelectorListenerAdapter;
 import org.apache.zookeeper.server.quorum.LeaderElection;
 
 /**
@@ -13,5 +14,6 @@ public class LeaderElectionTest {
     public static void main(String[] args) {
 
         // LeaderElection leaderElection = new LeaderElection("a");
+        // LeaderSelectorListenerAdapter
     }
 }
