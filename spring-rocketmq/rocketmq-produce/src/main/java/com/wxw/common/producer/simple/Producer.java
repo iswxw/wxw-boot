@@ -20,6 +20,12 @@ public class Producer {
 
     private DefaultMQProducer producer;
 
+
+    public static void main(String[] args) {
+        Producer producer = new Producer();
+        producer.start();
+    }
+
     public Producer(){
         //示例生产者
         producer = new DefaultMQProducer(producerGroup);

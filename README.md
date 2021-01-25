@@ -31,6 +31,7 @@
 - [【项目实战】spring-zookeeper]() 
 - [【项目实战】spring-mongodb]()
 - [【项目实战】spring-memcached]() 
+- [【项目实战】spring-rabbitmq]() 
 
 
 

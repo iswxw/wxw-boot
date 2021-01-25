@@ -22,6 +22,7 @@
         <module>spring-mongodb</module>
         <module>spring-xxljob</module>
         <module>spring-memcached</module>
+        <module>spring-rabbitmq</module>
     </modules>
     <packaging>pom</packaging>
 

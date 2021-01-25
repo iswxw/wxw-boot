@@ -22,13 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="memcached 整合和应用">
-      <change afterPath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/leaderelection/LeaderSelectorClient1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_2.xml" beforeDir="false" />
+    <list default="true" id="f4aef685-b663-46a2-8b03-1fce3bb2d22c" name="Default Changelist" comment="选举算法zookeeper">
+      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/wxw/SpringRabbitMqMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/wxw/common/ObjectUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/wxw/manager/message/MessageConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/wxw/manager/message/MessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-zookeeper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-zookeeper/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-zookeeper/spring-zookeeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-zookeeper/spring-zookeeper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/leaderelection/LeaderElectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/wxw/leaderelection/LeaderElectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/producer/simple/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rocketmq/rocketmq-produce/src/main/java/com/wxw/common/producer/simple/Producer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,13 +147,39 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeaderSelectorClient1">
+  <component name="RunManager" selected="Application.RetryProducer">
     <configuration name="LeaderSelectorClient1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wxw.leaderelection.LeaderSelectorClient1" />
       <module name="spring-zookeeper" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wxw.leaderelection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wxw.common.producer.simple.Producer" />
+      <module name="rocketmq-produce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wxw.common.producer.simple.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RetryProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wxw.common.producer.retry.RetryProducer" />
+      <module name="rocketmq-produce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wxw.common.producer.retry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,38 +214,6 @@
       <option name="PACKAGE_NAME" value="com.wxw" />
       <option name="MAIN_CLASS_NAME" value="com.wxw.TestProperties" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestProperties.test_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-memcached" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wxw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wxw" />
-      <option name="MAIN_CLASS_NAME" value="com.wxw.TestProperties" />
-      <option name="METHOD_NAME" value="test_1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testMongoClient.testClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-mongodb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wxw.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.wxw.test" />
-      <option name="MAIN_CLASS_NAME" value="com.wxw.test.testMongoClient" />
-      <option name="METHOD_NAME" value="testClient" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -310,23 +310,23 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.testMongoClient.testClient" />
+      <item itemvalue="Application.LeaderSelectorClient1" />
+      <item itemvalue="Application.Producer" />
+      <item itemvalue="Application.RetryProducer" />
       <item itemvalue="JUnit.TestMemcached.test" />
-      <item itemvalue="JUnit.TestProperties.test_1" />
       <item itemvalue="JUnit.TestProperties" />
       <item itemvalue="Spring Boot.DockerMain" />
       <item itemvalue="Spring Boot.QuartzMain" />
       <item itemvalue="Spring Boot.XxlJobExecutorApplication" />
       <item itemvalue="Spring Boot.XxlJobAdminApplication" />
-      <item itemvalue="Application.LeaderSelectorClient1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RetryProducer" />
+        <item itemvalue="Application.Producer" />
         <item itemvalue="Application.LeaderSelectorClient1" />
         <item itemvalue="JUnit.TestMemcached.test" />
         <item itemvalue="JUnit.TestProperties" />
-        <item itemvalue="JUnit.TestProperties.test_1" />
-        <item itemvalue="JUnit.testMongoClient.testClient" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +372,12 @@
       <workItem from="1608797325864" duration="126000" />
       <workItem from="1609116119662" duration="6066000" />
       <workItem from="1609140622434" duration="1912000" />
-      <workItem from="1609205238362" duration="8106000" />
+      <workItem from="1609205238362" duration="8147000" />
+      <workItem from="1610334281756" duration="871000" />
+      <workItem from="1610348691991" duration="781000" />
+      <workItem from="1610351030954" duration="1076000" />
+      <workItem from="1611042992492" duration="27000" />
+      <workItem from="1611550561972" duration="2920000" />
     </task>
     <task id="LOCAL-00001" summary="调整结构，成功使用dubbo进行RPC调用在zookeeper的方式">
       <created>1591634332935</created>
@@ -682,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609149974114</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="选举算法zookeeper">
+      <created>1609234882735</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1609234882735</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TodoView">
@@ -715,7 +727,6 @@
       <path value="$PROJECT_DIR$/xxl-job" />
       <path value="$PROJECT_DIR$/spring-xxl-job" />
     </ignored-roots>
-    <MESSAGE value="增加es模块" />
     <MESSAGE value="增加ES文档" />
     <MESSAGE value="shiro 安全框架基本架构搭建" />
     <MESSAGE value="maven" />
@@ -740,7 +751,8 @@
     <MESSAGE value="基本配置" />
     <MESSAGE value="fix-moudle" />
     <MESSAGE value="memcached 整合和应用" />
-    <option name="LAST_COMMIT_MESSAGE" value="memcached 整合和应用" />
+    <MESSAGE value="选举算法zookeeper" />
+    <option name="LAST_COMMIT_MESSAGE" value="选举算法zookeeper" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="114" key="#XxlJobAdminApplication_(1)" timestamp="1608271602786">
@@ -774,26 +786,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="388" height="587" key="Git.Branch.Popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608511689906" />
-    <state width="1877" height="400" key="GridCell.Tab.0.bottom" timestamp="1609123161261">
+    <state width="1877" height="400" key="GridCell.Tab.0.bottom" timestamp="1610352108098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="400" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609123161261" />
-    <state width="1877" height="400" key="GridCell.Tab.0.center" timestamp="1609123161261">
+    <state width="1877" height="400" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610352108098" />
+    <state width="1877" height="400" key="GridCell.Tab.0.center" timestamp="1610352108098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="400" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609123161261" />
-    <state width="1877" height="400" key="GridCell.Tab.0.left" timestamp="1609123161261">
+    <state width="1877" height="400" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610352108098" />
+    <state width="1877" height="400" key="GridCell.Tab.0.left" timestamp="1610352108098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="400" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609123161261" />
-    <state width="1877" height="400" key="GridCell.Tab.0.right" timestamp="1609123161261">
+    <state width="1877" height="400" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610352108098" />
+    <state width="1877" height="400" key="GridCell.Tab.0.right" timestamp="1610352108098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="226" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606753139605" />
-    <state width="1877" height="400" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609123161261" />
+    <state width="1877" height="400" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610352108098" />
     <state width="1877" height="495" key="GridCell.Tab.1.bottom" timestamp="1608626361319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -827,10 +839,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606785232213" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609149978411">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609234890128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609149978411" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609234890128" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1608602339871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -848,10 +860,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608797183334" />
-    <state x="223" y="96" key="new project wizard" timestamp="1609116175104">
+    <state x="223" y="96" key="new project wizard" timestamp="1611550644203">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="178" y="77" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1606745412176" />
-    <state x="223" y="96" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609116175104" />
+    <state x="223" y="96" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1611550644203" />
   </component>
 </project>

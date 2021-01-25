@@ -26,6 +26,8 @@
     <file url="file://$PROJECT_DIR$/spring-netty/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-quartz/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-quartz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rabbitmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-rabbitmq/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-redis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rocketmq" charset="UTF-8" />
