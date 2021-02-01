@@ -11,8 +11,7 @@
         <module>xxl-job-core</module>
         <module>xxl-job-springboot</module>
     </modules>
-    <groupId>com.wxw.xxljob</groupId>
-	<artifactId>spring-xxl-job</artifactId>
+	<artifactId>spring-xxljob</artifactId>
 	<version>2.3.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
