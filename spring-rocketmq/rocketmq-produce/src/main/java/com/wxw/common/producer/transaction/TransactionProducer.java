@@ -83,7 +83,6 @@ public class TransactionProducer {
 }
 
 /**
- * @author xub
  * @Description: 自定义事务监听器
  * @date 2019/7/15 下午12:20
  */

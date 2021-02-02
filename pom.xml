@@ -20,7 +20,7 @@
         <module>spring-quartz</module>
         <module>spring-configuration</module>
         <module>spring-mongodb</module>
-        <module>spring-xxljob</module>
+        <module>spring-xxl-2job</module>
         <module>spring-memcached</module>
         <module>spring-rabbitmq</module>
     </modules>
