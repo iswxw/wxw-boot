@@ -23,6 +23,8 @@
     <file url="file://$PROJECT_DIR$/spring-memcached/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-mongodb/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-mongodb/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-monitor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-netty/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-quartz/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-quartz/src/main/resources" charset="UTF-8" />
@@ -54,11 +56,11 @@
     <file url="file://$PROJECT_DIR$/spring-shiro" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-shiro/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-shiro/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-xxljob/xxl-job-admin/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-xxljob/xxl-job-admin/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-xxljob/xxl-job-core/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-xxljob/xxl-job-springboot/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-xxljob/xxl-job-springboot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-xxl-2job/xxl-job-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-xxl-2job/xxl-job-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-xxl-2job/xxl-job-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-xxl-2job/xxl-job-springboot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-xxl-2job/xxl-job-springboot/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-zookeeper/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-zookeeper/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/spring-xxl-job/xxl-job-admin/pom.xml" />
         <option value="$PROJECT_DIR$/spring-xxl-job/xxl-job-core/pom.xml" />
         <option value="$PROJECT_DIR$/xxl-job/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-xxl-2job/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

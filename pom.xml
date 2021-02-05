@@ -23,6 +23,7 @@
         <module>spring-xxl-2job</module>
         <module>spring-memcached</module>
         <module>spring-rabbitmq</module>
+        <module>spring-monitor</module>
     </modules>
     <packaging>pom</packaging>
 

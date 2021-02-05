@@ -1,0 +1,8 @@
+
+## sentry异常日志监控配置
+sentry:
+  dsn: https://f1bcc043c25c42668761c9c90ba4a791@o517034.ingest.sentry.io/5624255
+  exception-resolver-order: 2147483647
+  logging:
+    minimum-event-level: warn        # 向Sentry发送事件
+    minimum-breadcrumb-level: debug  # 日志消息作为面包屑

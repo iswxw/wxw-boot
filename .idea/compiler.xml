@@ -7,35 +7,36 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-monitor" />
         <module name="spring-table-read-write" />
-        <module name="spring-dubbo-provider" />
-        <module name="xxl-job-executor-sample-springboot" />
-        <module name="spring-mongodb" />
-        <module name="spring-read-write" />
-        <module name="spring-redis" />
-        <module name="spring-netty" />
-        <module name="spring-shiro" />
-        <module name="spring-dubbo-consumer" />
-        <module name="spring-quartz" />
-        <module name="spring-configuration" />
-        <module name="spring-db-table" />
-        <module name="xxl-job-executor-sample-frameless" />
-        <module name="spring-memcached" />
-        <module name="spring-db-table-read-write" />
-        <module name="xxl-job-core" />
-        <module name="spring-dubbo-sdk" />
-        <module name="xxl-job-admin" />
-        <module name="rocketmq-sdk" />
-        <module name="spring-rabbitmq" />
-        <module name="xxl-job-core (2) (com.xuxueli)" />
-        <module name="spring-docker" />
-        <module name="spring-zookeeper" />
-        <module name="spring-elasticsearch" />
-        <module name="spring-table" />
-        <module name="rocketmq-consume" />
         <module name="xxl-job-admin (2) (com.xuxueli)" />
+        <module name="spring-dubbo-sdk" />
+        <module name="rocketmq-consume" />
+        <module name="spring-table" />
+        <module name="spring-netty" />
         <module name="rocketmq-produce" />
+        <module name="spring-db-table-read-write" />
+        <module name="spring-read-write" />
+        <module name="spring-configuration" />
+        <module name="spring-mongodb" />
+        <module name="spring-docker" />
+        <module name="xxl-job-core (2) (com.xuxueli)" />
+        <module name="spring-rabbitmq" />
+        <module name="spring-memcached" />
         <module name="xxl-job-springboot" />
+        <module name="spring-redis" />
+        <module name="xxl-job-core" />
+        <module name="spring-quartz" />
+        <module name="spring-db-table" />
+        <module name="spring-dubbo-consumer" />
+        <module name="spring-dubbo-provider" />
+        <module name="spring-zookeeper" />
+        <module name="xxl-job-executor-sample-frameless" />
+        <module name="rocketmq-sdk" />
+        <module name="spring-shiro" />
+        <module name="xxl-job-admin" />
+        <module name="xxl-job-executor-sample-springboot" />
+        <module name="spring-elasticsearch" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -53,6 +54,7 @@
       <module name="spring-elasticsearch" target="1.8" />
       <module name="spring-memcached" target="1.8" />
       <module name="spring-mongodb" target="1.8" />
+      <module name="spring-monitor" target="1.8" />
       <module name="spring-netty" target="1.8" />
       <module name="spring-quartz" target="1.8" />
       <module name="spring-rabbitmq" target="1.8" />
@@ -63,7 +65,7 @@
       <module name="spring-shiro" target="1.8" />
       <module name="spring-table" target="1.8" />
       <module name="spring-table-read-write" target="1.8" />
-      <module name="spring-xxljob" target="1.8" />
+      <module name="spring-xxl-2job" target="1.8" />
       <module name="spring-zookeeper" target="1.8" />
       <module name="wxw-springboot" target="1.8" />
       <module name="xx-job-core" target="1.8" />
