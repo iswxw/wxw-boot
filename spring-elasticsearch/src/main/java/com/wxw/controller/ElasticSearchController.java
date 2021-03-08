@@ -20,7 +20,6 @@ public class ElasticSearchController {
 
     @PostMapping("/person")
     public String save(@RequestBody Person person) {
-
         return null;
     }
 
