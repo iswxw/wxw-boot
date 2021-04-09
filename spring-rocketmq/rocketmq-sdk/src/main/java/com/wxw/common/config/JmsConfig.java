@@ -1,4 +1,4 @@
-package common.config;
+package com.wxw.common.config;
 
 /**
  * @author ：wxw.
