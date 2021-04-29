@@ -20,11 +20,13 @@
         <module>spring-quartz</module>
         <module>spring-configuration</module>
         <module>spring-mongodb</module>
-        <module>spring-xxl-2job</module>
+        <module>spring-xxljob</module>
         <module>spring-memcached</module>
         <module>spring-rabbitmq</module>
         <module>spring-monitor</module>
         <module>spring-mybatis</module>
+        <module>spring-kafka</module>
+        <module>spring-junit</module>
     </modules>
     <packaging>pom</packaging>
 
