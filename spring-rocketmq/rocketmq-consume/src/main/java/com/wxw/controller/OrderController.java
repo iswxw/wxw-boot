@@ -1,7 +1,7 @@
 package com.wxw.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.wxw.service.ProduceService;
+import com.wxw.services.ProduceService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

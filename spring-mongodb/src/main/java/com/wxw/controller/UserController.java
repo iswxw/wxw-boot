@@ -1,7 +1,7 @@
 package com.wxw.controller;
 
 import com.wxw.domain.User;
-import com.wxw.service.UserService;
+import com.wxw.services.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

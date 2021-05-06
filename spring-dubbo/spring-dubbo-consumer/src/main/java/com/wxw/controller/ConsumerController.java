@@ -1,6 +1,6 @@
 package com.wxw.controller;
 
-import com.wxw.service.ConsumerService;
+import com.wxw.services.ConsumerService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

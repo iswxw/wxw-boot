@@ -6,14 +6,15 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Iterator;
 import java.util.List;
-
-import static org.mockito.Mockito.mock;
+// 静态引入
+import static org.mockito.Mockito.*;
 
 /**
  * @author weixiaowei
@@ -21,7 +22,7 @@ import static org.mockito.Mockito.mock;
  * @date: 2021/4/27
  */
 @SpringBootTest
-@RunWith(SpringRunner.class)
+@RunWith(SpringJUnit4ClassRunner.class)
 @Slf4j
 public class DemoJunitTest {
 
@@ -34,10 +35,11 @@ public class DemoJunitTest {
         List<Integer> mock = mock(List.class);
         //调用mock对象的方法
         mock.add(1);
+        log.info("mock = {}",mock);
         mock.clear();
         //验证方法是否执行
-        Mockito.verify(mock).add(1);
-        Mockito.verify(mock).clear();
+        verify(mock).add(1);
+        verify(mock).clear();
     }
 
     /**
@@ -64,5 +66,22 @@ public class DemoJunitTest {
         //预设当流关闭时抛出异常
         Mockito.doThrow(new IOException()).when(mock).close();
         mock.close();
+    }
+
+    /**
+     * 校验
+     */
+    @Test
+    public void test_verify() {
+        List mockedList = mock(List.class);
+        mockedList.add("one");
+        mockedList.add("two");
+        mockedList.add("three times");
+        mockedList.add("three times");
+        mockedList.add("three times");
+        when(mockedList.size()).thenReturn(5);
+        int size = mockedList.size();
+        log.info("size = {}",size);
+        Assert.assertEquals(size, 5);
     }
 }

@@ -1,6 +1,6 @@
 package com.wxw.rpc;
 
-import com.wxw.service.ProviderService;
+import com.wxw.services.ProviderService;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Component;
 

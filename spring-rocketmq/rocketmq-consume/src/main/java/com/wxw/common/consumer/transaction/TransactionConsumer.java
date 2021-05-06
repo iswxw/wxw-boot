@@ -2,7 +2,7 @@ package com.wxw.common.consumer.transaction;
 
 import com.alibaba.fastjson.JSONObject;
 import com.wxw.common.config.Jms;
-import com.wxw.service.ProduceService;
+import com.wxw.services.ProduceService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;

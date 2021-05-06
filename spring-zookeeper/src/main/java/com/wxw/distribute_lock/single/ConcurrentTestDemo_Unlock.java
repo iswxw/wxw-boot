@@ -1,7 +1,7 @@
 package com.wxw.distribute_lock.single;
 
-import com.wxw.service.OrderService;
-import com.wxw.service.impl.OrderServiceImpl;
+import com.wxw.services.OrderService;
+import com.wxw.services.impl.OrderServiceImpl;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
