@@ -109,6 +109,20 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <!--全局配置依赖-->
+    <dependencies>
+        <!--文件处理-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+        <!--健康监测-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+    </dependencies>
+
     <!--配置不同的profile，对应不同的生产环境 此处未使用-->
     <profiles>
         <!--开发环境-->

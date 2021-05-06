@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 import javax.transaction.Transactional;
 
 @Service
-@Transactional
+//@Transactional
 public class TicketBookingServiceImpl implements TicketBookingService {
 
     @Resource
