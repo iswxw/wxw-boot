@@ -30,6 +30,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Rest 风格单元测试
+ *  注意参数类型严格保持一致
  */
 
 @RunWith(SpringRunner.class)
@@ -41,7 +42,6 @@ public class TicketBookingControllerTest {
 
     @MockBean
     private TicketBookingService ticketBookingService;
-
 
     @Test
     public void testNewTicket() throws Exception{
