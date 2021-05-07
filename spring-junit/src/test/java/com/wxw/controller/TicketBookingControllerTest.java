@@ -81,7 +81,6 @@ public class TicketBookingControllerTest {
         ticket.setBookingDate(new Date());
         ticket.setEmail("kumar@msn.com");
         String jsonInput = this.converttoJson(ticket);
-
         Mockito.when(ticketBookingService.findTicketById(Mockito.any())).thenReturn(ticket);
         MvcResult mvcResult = this.mockMvc.perform(MockMvcRequestBuilders.get(URI, 102).accept(MediaType.APPLICATION_JSON)).andReturn();
         MockHttpServletResponse mockHttpServletResponse = mvcResult.getResponse();
