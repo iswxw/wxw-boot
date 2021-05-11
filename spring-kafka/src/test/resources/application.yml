@@ -1,7 +1,6 @@
-
 spring:
   kafka:
-    bootstrap-servers: 127.0.0.1:9092
+    bootstrap-servers: 172.16.5.67:9092
     producer:
       # 配置自定义分区器
       # 发生错误后，消息重发的次数。
@@ -41,5 +40,3 @@ spring:
       #listner负责ack，每调用一次，就立即commit
       ack-mode: manual_immediate
       missing-topics-fatal: false
-logging:
-  level: debug

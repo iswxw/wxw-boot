@@ -1,8 +1,7 @@
 package com.wxw.kafka;
 
-import org.junit.runner.RunWith;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 /**
  * @author weixiaowei
@@ -11,4 +10,9 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @SpringBootTest
 public class BaseTest {
+
+    @Test
+    public void test_path() {
+        System.out.println("BaseTest.class.getResource(\"\") = " + BaseTest.class.getResource("/"));
+    }
 }
