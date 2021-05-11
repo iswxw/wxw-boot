@@ -67,9 +67,6 @@ public class DemoAmpLogConsumer extends BaseTest {
                 byte[] uncompress = CompressHelper.uncompress(record.value());
                 outputStream.write(uncompress);
                 outputStream.flush();
-
-                String string = CompressHelper.uncompressToString(record.value(), "utf-8");
-                log.info("string = {}",string);
             }
         }
     }
