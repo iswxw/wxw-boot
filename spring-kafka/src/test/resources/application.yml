@@ -40,3 +40,7 @@ spring:
       #listner负责ack，每调用一次，就立即commit
       ack-mode: manual_immediate
       missing-topics-fatal: false
+
+
+logging:
+  level:
