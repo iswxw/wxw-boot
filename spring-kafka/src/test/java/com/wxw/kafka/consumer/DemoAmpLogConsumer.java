@@ -1,35 +1,29 @@
 package com.wxw.kafka.consumer;
 
-import cn.hutool.core.codec.Base64;
 import cn.hutool.core.util.ZipUtil;
 import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.databind.deser.std.StringDeserializer;
-import com.fasterxml.jackson.databind.ser.std.ByteArraySerializer;
-import com.wxw.common.helper.CompressHelper;
 import com.wxw.kafka.BaseTest;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.kafka.clients.consumer.*;
+import org.apache.kafka.clients.consumer.Consumer;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.common.serialization.ByteArrayDeserializer;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.*;
-import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Properties;
 import java.util.concurrent.Future;
-import java.util.zip.*;
+import java.util.zip.DataFormatException;
 
 /**
  * @author weixiaowei
- * @desc:
+ * @desc: 文件压缩为字节数组使用kafka传递
  * @date: 2021/5/11
  */
 @Slf4j
@@ -67,12 +61,8 @@ public class DemoAmpLogConsumer extends BaseTest {
                     file.createNewFile();
                 }
                 OutputStream outputStream = new FileOutputStream(file);
-                outputStream.write(record.value());
-                outputStream.flush();
-
-//                byte[] uncompress = CompressHelper.uncompress(record.value());
-//                byte[] uncompress = ZipUtil.unGzip(record.value());
-//                outputStream.write(uncompress);
+                byte[] uncompress = ZipUtil.unGzip(record.value());
+                outputStream.write(uncompress);
                 outputStream.flush();
 //                outputStream.close();
             }

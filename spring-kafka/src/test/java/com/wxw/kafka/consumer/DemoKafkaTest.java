@@ -18,7 +18,7 @@ import java.util.Properties;
  * @date: 2021/4/25
  */
 @Slf4j
-public class KafkaTest {
+public class DemoKafkaTest {
 
     public static void main(String[] args) {
         test_consumer();
