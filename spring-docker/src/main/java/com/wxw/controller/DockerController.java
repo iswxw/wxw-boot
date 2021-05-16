@@ -16,4 +16,9 @@ public class DockerController {
     public String getDocker_01() {
         return "Hello World!";
     }
+
+    @GetMapping("/")
+    public String defaultClass() {
+        return "运行成功，非常完美!";
+    }
 }

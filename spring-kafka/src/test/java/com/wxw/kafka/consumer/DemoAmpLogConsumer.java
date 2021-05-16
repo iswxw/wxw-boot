@@ -48,7 +48,7 @@ public class DemoAmpLogConsumer extends BaseTest {
         consumer.subscribe(Arrays.asList(topic));
         // Consumer调用poll方法来轮询Kafka集群的消息，一直等到Kafka集群中没有消息或者达到超时时间100ms为止
         while (true) {
-            ConsumerRecords<byte[], byte[]> records = consumer.poll(2);
+            ConsumerRecords<byte[], byte[]> records = consumer.poll(100);
             for (ConsumerRecord<byte[],byte[]> record : records) {
                 log.error("record topic = {}",record.topic());
                 log.error("record partition = {} offset = {}",record.partition(),record.offset());
@@ -87,7 +87,7 @@ public class DemoAmpLogConsumer extends BaseTest {
         InputStream in = new FileInputStream(path);
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         IOUtils.copy(in,outputStream);
-        ProducerRecord producerRecord = new ProducerRecord<String,byte[]>(topic,outputStream.toByteArray());
+        ProducerRecord producerRecord = new ProducerRecord<String,byte[]>(topic,ZipUtil.gzip(outputStream.toByteArray()));
 //        ProducerRecord producerRecord = new ProducerRecord<String,String>(topic,"测试");
         Future send = producer.send(producerRecord);
         log.error(JSON.toJSONString(send));
@@ -117,7 +117,7 @@ public class DemoAmpLogConsumer extends BaseTest {
         consumer.subscribe(Arrays.asList(topic));
         // Consumer调用poll方法来轮询Kafka集群的消息，一直等到Kafka集群中没有消息或者达到超时时间100ms为止
         while (true) {
-            ConsumerRecords<String, String> records = consumer.poll(2);
+            ConsumerRecords<String, String> records = consumer.poll(100);
             for (ConsumerRecord<String, String> record : records) {
                 log.error("record topic = {}",record.topic());
                 log.error("record partition = {} offset = {}",record.partition(),record.offset());
