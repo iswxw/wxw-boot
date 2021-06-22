@@ -1,11 +1,9 @@
 package com.wxw.kafka;
 
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.io.IoUtil;
-import org.junit.Test;
+import com.wxw.domain.TimerCount;
+import org.junit.After;
+import org.junit.Before;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.io.*;
 
 /**
  * @author weixiaowei
@@ -15,22 +13,15 @@ import java.io.*;
 @SpringBootTest
 public class BaseTest {
 
-    @Test
-    public void test_path() {
-        System.out.println("BaseTest.class.getResource(\"\") = " + BaseTest.class.getResource("/"));
+    @Before
+    public void test_before() {
+        TimerCount.startTime = System.currentTimeMillis();
     }
 
-    @Test
-    public void test_binary() throws IOException {
-        String filePath = "/Users/mac/IdeaProjects/wxw/wxw-springboot/spring-kafka/src/test/resources/高途课堂-report-0000000076000000";
-        BufferedInputStream inputStream = FileUtil.getInputStream(new File(filePath));
-        File file = new File("./test-" + System.currentTimeMillis() + ".json");
-        if (!file.exists()) {
-            file.createNewFile();
-        }
-        OutputStream outputStream = new FileOutputStream(file);
-        IoUtil.copy(inputStream, outputStream);
-        outputStream.flush();
+    @After
+    public void test_after() {
+        TimerCount.endTime = System.currentTimeMillis();
+        TimerCount.print();
     }
 
 }

@@ -29,11 +29,14 @@ import java.util.zip.DataFormatException;
 @Slf4j
 public class DemoAmpLogConsumer extends BaseTest {
 
-
-    // 序列化字节数据
+    /**
+     * 消费字节数组（二进制文件流）
+     * 序列化字节数据
+     * @throws IOException
+     */
     @Test
-    public void test_consumer_crash() throws IOException, DataFormatException {
-        String topic = "crashLog";
+    public void test_consumer_crash() throws IOException {
+        String topic = "crash_ios_Log";
         Properties props = new Properties();
         // Kafka集群，多台服务器地址之间用逗号隔开
         props.put("bootstrap.servers", "172.16.5.67:9092");
@@ -41,15 +44,15 @@ public class DemoAmpLogConsumer extends BaseTest {
         // 自动提交offset到zk的时间间隔，时间单位是毫秒
         props.put("auto.commit.interval.ms", "1000");
         // 消息的反序列化类型
-        props.put("key.deserializer", "org.apache.kafka.common.serialization.ByteArrayDeserializer");
+        props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("value.deserializer", "org.apache.kafka.common.serialization.ByteArrayDeserializer");
-        Consumer<byte[], byte[]> consumer = new KafkaConsumer<>(props);
+        Consumer<String, byte[]> consumer = new KafkaConsumer<>(props);
         // 订阅的话题
         consumer.subscribe(Arrays.asList(topic));
         // Consumer调用poll方法来轮询Kafka集群的消息，一直等到Kafka集群中没有消息或者达到超时时间100ms为止
         while (true) {
-            ConsumerRecords<byte[], byte[]> records = consumer.poll(100);
-            for (ConsumerRecord<byte[],byte[]> record : records) {
+            ConsumerRecords<String, byte[]> records = consumer.poll(100);
+            for (ConsumerRecord<String,byte[]> record : records) {
                 log.error("record topic = {}",record.topic());
                 log.error("record partition = {} offset = {}",record.partition(),record.offset());
                 log.error("record key = {}",record.key());
@@ -68,6 +71,7 @@ public class DemoAmpLogConsumer extends BaseTest {
             }
         }
     }
+
 
 
     @Test
