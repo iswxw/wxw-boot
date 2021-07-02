@@ -47,7 +47,7 @@ public class DsymParseKafka extends BaseTest {
         consumer.subscribe(Arrays.asList(topic));
         // Consumer调用poll方法来轮询Kafka集群的消息，一直等到Kafka集群中没有消息或者达到超时时间100ms为止
         while (true) {
-            ConsumerRecords<String, String> records = consumer.poll(1);
+            ConsumerRecords<String, String> records = consumer.poll(100);
             for (ConsumerRecord record : records) {
                 log.error("record topic = {}",record.topic());
                 log.error("record partition = {} offset = {}",record.partition(),record.offset());
