@@ -1,7 +1,7 @@
 package com.wxw.common.tools;
 
 import com.wxw.common.Constant;
-import com.wxw.common.exception.RRException;
+import com.wxw.common.exception.SRException;
 import com.wxw.domain.ScheduleJob;
 import com.wxw.job.AbstractJob;
 import org.quartz.*;
@@ -38,7 +38,7 @@ public class ScheduleManager {
         try {
             return (CronTrigger) scheduler.getTrigger(getTriggerKey(jobId));
         } catch (SchedulerException e) {
-            throw new RRException("获取定时任务CronTrigger出现异常", e);
+            throw new SRException("获取定时任务CronTrigger出现异常", e);
         }
     }
 
@@ -52,7 +52,7 @@ public class ScheduleManager {
             try {
                 jobClass = AbstractJob.class.getClassLoader().loadClass(className);
             } catch (ClassNotFoundException e) {
-                throw new RRException("任务类未发现异常", e);
+                throw new SRException("任务类未发现异常", e);
             }
             //构建job信息
             JobDetail jobDetail = JobBuilder.newJob((Class<? extends Job>) jobClass).withIdentity(getJobKey(scheduleJob.getJobId())).build();
@@ -73,7 +73,7 @@ public class ScheduleManager {
                 pauseJob(scheduler, scheduleJob.getJobId());
             }
         } catch (SchedulerException e) {
-            throw new RRException("创建定时任务失败", e);
+            throw new SRException("创建定时任务失败", e);
         }
     }
 
@@ -108,7 +108,7 @@ public class ScheduleManager {
             }
 
         } catch (SchedulerException e) {
-            throw new RRException("更新定时任务失败", e);
+            throw new SRException("更新定时任务失败", e);
         }
     }
 
@@ -122,7 +122,7 @@ public class ScheduleManager {
             dataMap.put(ScheduleJob.JOB_PARAM_KEY, scheduleJob);
             scheduler.triggerJob(getJobKey(scheduleJob.getJobId()), dataMap);
         } catch (SchedulerException e) {
-            throw new RRException("立即执行定时任务失败", e);
+            throw new SRException("立即执行定时任务失败", e);
         }
     }
 
@@ -133,7 +133,7 @@ public class ScheduleManager {
         try {
             scheduler.resumeJob(getJobKey(jobId));
         } catch (SchedulerException e) {
-            throw new RRException("暂停定时任务失败", e);
+            throw new SRException("暂停定时任务失败", e);
         }
     }
 
@@ -144,7 +144,7 @@ public class ScheduleManager {
         try {
             scheduler.deleteJob(getJobKey(jobId));
         } catch (SchedulerException e) {
-            throw new RRException("删除定时任务失败", e);
+            throw new SRException("删除定时任务失败", e);
         }
     }
 
@@ -155,7 +155,7 @@ public class ScheduleManager {
         try {
             scheduler.pauseJob(getJobKey(jobId));
         } catch (SchedulerException e) {
-            throw new RRException("暂停定时任务失败", e);
+            throw new SRException("暂停定时任务失败", e);
         }
     }
 }
