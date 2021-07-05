@@ -9,7 +9,10 @@ import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.junit.Test;
 import org.springframework.util.StringUtils;
 
+import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Properties;
 
 /**
@@ -21,13 +24,13 @@ import java.util.Properties;
 public class DemoKafkaTest {
 
     public static void main(String[] args) {
-        test_consumer();
+        test_consumer_auto_commit();
     }
 
     /**
-     * kafka 临时消费消息
+     * kafka 临时消费消息 自动提交
      */
-    public static void test_consumer() {
+    public static void test_consumer_auto_commit() {
         String topic = "videoLogV2";
         Properties props = new Properties();
         // Kafka集群，多台服务器地址之间用逗号隔开
@@ -58,4 +61,34 @@ public class DemoKafkaTest {
             }
         }
     }
+
+    /**
+     * kafka 临时消费消息 手动提交
+     */
+    public static void testConsumer_manual_commit() {
+        Properties props = new Properties();
+        props.setProperty("bootstrap.servers", "localhost:9092");
+        props.setProperty("group.id", "test");
+        props.setProperty("enable.auto.commit", "false");
+        props.setProperty("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
+        props.setProperty("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
+        KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
+        consumer.subscribe(Arrays.asList("foo", "bar"));
+        final int minBatchSize = 200;
+        List<ConsumerRecord<String, String>> buffer = new ArrayList<>();
+        while (true) {
+            ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+            for (ConsumerRecord<String, String> record : records) {
+                buffer.add(record);
+            }
+            if (buffer.size() >= minBatchSize) {
+                // insertIntoDb(buffer);
+                // 省略处理逻辑
+                consumer.commitSync();
+                // 清除缓存
+                buffer.clear();
+            }
+        }
+    }
+
 }
