@@ -6,6 +6,8 @@
 
 对于使用Apache Kafka的Spring项目，我们在Spring核心提供了Kafka消息的集成。提供了公共的接入“模板”，作为消息发送的高级抽象层，还为消息的POJO提供支持。
 
+- 官网文档：https://spring.io/projects/spring-kafka
+
 ### 2. kafka 环境
 
 #### 2.1 安装 zookeeper
