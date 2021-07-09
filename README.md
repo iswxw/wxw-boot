@@ -36,5 +36,7 @@
 - [【项目实战】spring-mybatis]()  
 - [【项目实战】spriing-kafka](https://gitee.com/wwxw/wxw-springboot/tree/dev-wxw/spring-kafka) 
 - [【项目实战】spring-junit](https://github.com/GitHubWxw/wxw-springboot/tree/dev-wxw/spring-junit)   
+- [【项目实战】spring-shell](https://github.com/GitHubWxw/wxw-springboot/tree/dev-wxw/spring-shell)    
+- [【项目实战】spring-batch](https://github.com/GitHubWxw/wxw-springboot/tree/dev-wxw/spring-batch)    
 
 欢迎关注！如果对你有帮助可以收藏、点赞、star、在看、分享~~ 你的支持，就是我写文的最大动力

@@ -12,7 +12,6 @@
         <module>spring-elasticsearch</module>
         <module>spring-shiro</module>
         <module>spring-rocketmq</module>
-        <module>spring-docker</module>
         <module>spring-netty</module>
         <module>spring-zookeeper</module>
         <module>spring-redis</module>
@@ -28,6 +27,7 @@
         <module>spring-kafka</module>
         <module>spring-junit</module>
         <module>spring-batch</module>
+        <module>spring-shell</module>
     </modules>
     <packaging>pom</packaging>
 
