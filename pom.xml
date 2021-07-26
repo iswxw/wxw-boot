@@ -22,7 +22,7 @@
         <module>spring-xxljob</module>
         <module>spring-memcached</module>
         <module>spring-rabbitmq</module>
-        <module>spring-monitor</module>
+        <module>spring-sentry</module>
         <module>spring-mybatis</module>
         <module>spring-kafka</module>
         <module>spring-junit</module>
