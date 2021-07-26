@@ -28,6 +28,7 @@
         <module>spring-junit</module>
         <module>spring-batch</module>
         <module>spring-shell</module>
+        <module>spring-prometheus-grafana</module>
     </modules>
     <packaging>pom</packaging>
 
