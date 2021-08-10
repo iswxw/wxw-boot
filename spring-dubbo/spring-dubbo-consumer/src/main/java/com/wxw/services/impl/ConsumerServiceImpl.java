@@ -1,6 +1,6 @@
 package com.wxw.services.impl;
 
-import com.wxw.rpc.ProviderRPC;
+import com.wxw.manage.rpc.ProviderRPC;
 import com.wxw.services.ConsumerService;
 import org.springframework.stereotype.Service;
 

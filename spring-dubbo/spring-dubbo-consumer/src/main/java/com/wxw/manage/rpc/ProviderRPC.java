@@ -1,4 +1,4 @@
-package com.wxw.rpc;
+package com.wxw.manage.rpc;
 
 import com.wxw.services.ProviderService;
 import org.apache.dubbo.config.annotation.DubboReference;
