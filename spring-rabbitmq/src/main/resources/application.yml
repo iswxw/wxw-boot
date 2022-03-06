@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: spring-rabbitmq
-  rabbitmq:
-    host: wxw.plus   # rabbitmq的连接地址  localhost
-    port: 5672 # rabbitmq的连接端口号
-    virtual-host: /wxw # rabbitmq的虚拟 host
-    username: wxw # rabbitmq的用户名
-    password: wxw # rabbitmq的密码

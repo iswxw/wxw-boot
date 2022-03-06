@@ -1,9 +1,0 @@
-
-
-实现：
-  1.实现基本的单元测试
-  2.使用 H2(基于内存的嵌入式数据库)优化单元测试
-    - SpringBoot 整合 H2 案例：https://github.com/ddean2009/learn-springboot2/tree/master/springboot-h2
-
-思考：
-  一个人代码写的好不好，写个单元测试就知道了(看单元测试好不好写)

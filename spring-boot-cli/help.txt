@@ -1,0 +1,11 @@
+
+
+[maven打包项目]
+  - mvn package
+
+[本地运行项目]
+  - java -jar spring-boot-cli-1.0-SNAPSHOT.jar
+  - 测试服务接口： curl 127.0.0.1:8080
+
+[查看jar包]
+  - jar tvf spring-boot-cli-1.0-SNAPSHOT.jar
