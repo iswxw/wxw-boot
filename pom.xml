@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-boot-cli</module>
+        <module>spring-boot-redis</module>
     </modules>
     <packaging>pom</packaging>
 
