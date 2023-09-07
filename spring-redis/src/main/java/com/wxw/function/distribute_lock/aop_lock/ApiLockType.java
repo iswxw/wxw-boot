@@ -1,4 +1,4 @@
-package com.wxw.distribute_lock.aop_lock;
+package com.wxw.function.distribute_lock.aop_lock;
 
 /**
  * 锁类型

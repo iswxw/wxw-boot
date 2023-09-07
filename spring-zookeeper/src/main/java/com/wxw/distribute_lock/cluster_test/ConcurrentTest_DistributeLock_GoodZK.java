@@ -1,4 +1,4 @@
-package com.wxw.distribute_lock.cluster_test;
+package com.wxw.function.distribute_lock.cluster_test;
 
 import com.wxw.services.OrderService;
 import com.wxw.services.impl.OrderServiceImplWithZkGoodLock;

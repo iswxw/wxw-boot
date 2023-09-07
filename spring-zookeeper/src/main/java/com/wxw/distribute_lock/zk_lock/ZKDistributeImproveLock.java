@@ -1,4 +1,4 @@
-package com.wxw.distribute_lock.zk_lock;
+package com.wxw.function.distribute_lock.zk_lock;
 
 import com.wxw.common.tools.MyZkSerializer;
 import org.I0Itec.zkclient.IZkDataListener;

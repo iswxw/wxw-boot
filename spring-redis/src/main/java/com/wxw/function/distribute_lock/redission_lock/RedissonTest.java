@@ -1,4 +1,4 @@
-package com.wxw.distribute_lock.redission_lock;
+package com.wxw.function.distribute_lock.redission_lock;
 
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * @description：所测试
  * @version: v_0.0.1
  */
-public class RedissionTest {
+public class RedissonTest {
     public static void main(String[] args) {
         RedissonClient redissonClient = RedissonLock.redissonClient();
         RLock lock = redissonClient.getLock("lockName");
