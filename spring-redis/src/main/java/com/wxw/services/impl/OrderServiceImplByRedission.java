@@ -1,7 +1,7 @@
 package com.wxw.services.impl;
 
 import com.wxw.common.tools.OrderNumGenerator;
-import com.wxw.distribute_lock.redission_lock.RedissonLock;
+import com.wxw.function.distribute_lock.redission_lock.RedissonLock;
 import com.wxw.services.OrderService;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;

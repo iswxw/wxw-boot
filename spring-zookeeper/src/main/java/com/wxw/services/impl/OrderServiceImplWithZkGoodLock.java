@@ -1,7 +1,7 @@
 package com.wxw.services.impl;
 
 import com.wxw.common.tools.OrderNumGenerator;
-import com.wxw.distribute_lock.zk_lock.ZKDistributeImproveLock;
+import com.wxw.function.distribute_lock.zk_lock.ZKDistributeImproveLock;
 import com.wxw.services.OrderService;
 
 import java.util.concurrent.locks.Lock;

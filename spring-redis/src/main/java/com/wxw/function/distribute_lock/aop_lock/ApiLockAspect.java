@@ -1,4 +1,4 @@
-package com.wxw.distribute_lock.aop_lock;
+package com.wxw.function.distribute_lock.aop_lock;
 
 import com.wxw.common.Result;
 import com.wxw.common.ServiceException;

@@ -1,6 +1,6 @@
 package com.wxw.controller;
 
-import com.wxw.distribute_lock.aop_lock.ApiLock;
+import com.wxw.function.distribute_lock.aop_lock.ApiLock;
 import com.wxw.services.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;

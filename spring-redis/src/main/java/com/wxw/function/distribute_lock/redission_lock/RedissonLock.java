@@ -1,4 +1,4 @@
-package com.wxw.distribute_lock.redission_lock;
+package com.wxw.function.distribute_lock.redission_lock;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
