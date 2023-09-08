@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 /**
  * @ Author ：wxw.
  * @ Date ： 11:14 2020/9/28
- * @ Description：RedissionConfig 分布式锁配置
+ * @ Description：RedissonConfig 分布式锁配置
  * @ Version:   v_0.0.1
  */
 @Configuration

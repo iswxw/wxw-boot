@@ -28,7 +28,7 @@ public class RedPackageController {
 
     /**
      * 拆分+发送红包
-     * http://localhost:5555/send?totalMoney=100&redPackageNumber=5
+     * http://localhost:8082/red/send?totalMoney=100&redPackageNumber=5
      *
      * @param totalMoney
      * @param redPackageNumber
@@ -43,7 +43,7 @@ public class RedPackageController {
         //3 采用list存储红包并设置过期时间
         redisTemplate.opsForList().leftPushAll(key, splitRedPackages);
         redisTemplate.expire(key, 1, TimeUnit.DAYS);
-        return key + "\t" + "\t" + Collections.singletonList(Arrays.stream(splitRedPackages).mapToInt(Integer::valueOf).toArray());
+        return key + "\t\t" + Arrays.toString(Arrays.stream(splitRedPackages).mapToInt(Integer::valueOf).toArray());
     }
 
     /**
